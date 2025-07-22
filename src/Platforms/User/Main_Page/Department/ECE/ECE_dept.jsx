@@ -1,0 +1,321 @@
+import { Navbar } from "../../../Navbar/Navbar";
+import "../Department_Style.css";
+import { LeftDownload } from "../../MainContent/LocalNavigation/Left_Download/LeftDownload";
+import { LeftInformation } from "../../MainContent/LocalNavigation/Left_Information/LeftInformation";
+import { Footer } from "../../../Footer/Footer";
+import { LeftNotification } from "../../MainContent/LocalNavigation/Left_Notice/LeftNotification";
+function ECE_dept() {
+  return (
+    <div className="Dept_Container">
+      <Navbar />
+      <div className="Dept_align">
+        <div className="Dept_Tittle">
+          <h1>Department</h1>
+        </div>
+        <div className="Dept_name">
+          <h1 className="DeptName_header">
+            Department of Electronics & Communication Engineering
+          </h1>
+        </div>
+        <div className="Dept_Wrapper">
+          <div className="Dept_main">
+            <div className="Dept_info">
+              <h3>The Department presently offers the following programmes:</h3>
+              <div className="Dept_info_align">
+                <p>1. B.E. in Electronics & Communication Engineering</p>
+                <ul>
+                  <li>2. M. Tech in the following specialisations : </li>
+                  <li>a) Microelectronics and VSLI</li>
+                  <li>b) Communication and Signal Processing </li>
+                </ul>
+                <p>3. Ph. D. in Electronics & Communication Engineering</p>
+              </div>
+            </div>
+            <div className="Dept_staff">
+              <h2>Faculty Members : </h2>
+              <div className="Members_align">
+                <div className="Members_container">
+                  <div className="Box_1">
+                    <div className="Box_1_align">
+                      <div className="member_img_container">
+                        <img
+                          className="member_img"
+                          src="./Images/Department/ECE/Members/img_1.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div className="member_info_box">
+                        <h3>Prof. N. Basanta Singh</h3>
+                        <h4>Professor </h4>
+                        <a href="/">basanta_n@rediffmail.com</a>
+                        <p>Ph.D.</p>
+                        <p>Modelling & Simulation of Semiconductor Devices</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="Box_1">
+                    <div className="Box_1_align">
+                      <div className="member_img_container">
+                        <img
+                          className="member_img"
+                          src="./Images/Department/ECE/Members/imh_2.png"
+                          alt=""
+                        />
+                      </div>
+                      <div className="member_info_box">
+                        <h3>Dr. Kh. Jolson Singh</h3>
+                        <h4>Associate Professor</h4>
+                        <a href="/">jolly4u2@rediffmail.com</a>
+                        <p>Ph.D.</p>
+                        <p>Devices, Biomedical Engg</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="Box_1">
+                  <div className="tag_align">
+                      <div className="HOD_tag">
+                        <p className="hod_tag_text">HOD</p>
+                        <div className="tag_1"></div>
+                        <div className="tag_2"></div>
+                        <div className="tag_3"></div>
+                      </div>
+                    </div>
+                    <div className="Box_1_align">
+                      <div className="member_img_container">
+                        <img
+                          className="member_img"
+                          src="./Images/Department/ECE/Members/img_3.jpeg"
+                          alt=""
+                        />
+                      </div>
+                      <div className="member_info_box">
+                        <h3>Dr. Romesh Laishram</h3>
+                        <h4>Associate Professor & HoD in charge(EE)</h4>
+                        <a href="/">romeshlaishram@gmail.com</a>
+                        <p>Ph.D.</p>
+                        <p>
+                          Communication & Signal processing, Image Processing,
+                          Swarm Intelligence, Robotics, VLSI
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="Box_1">
+                    <div className="Box_1_align">
+                      <div className="member_img_container">
+                        <img
+                          className="member_img"
+                          src="./Images/Department/ECE/Members/img_4.jpeg"
+                          alt=""
+                        />
+                      </div>
+                      <div className="member_info_box">
+                        <h3>Sharmila Meinam</h3>
+                        <h4>Assistant Professor </h4>
+                        <a href="/">sharmila_meinam@yahoo.com </a>
+                        <p>M.E.</p>
+                        <p>Communication</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="Box_1">
+                    <div className="Box_1_align">
+                      <div className="member_img_container">
+                        <img
+                          className="member_img"
+                          src="./Images/Department/ECE/Members/img_5.jpeg"
+                          alt=""
+                        />
+                      </div>
+                      <div className="member_info_box">
+                        <h3>Kh. Renuca Devi</h3>
+                        <h4>Assistant Professor </h4>
+                        <a href="/">khrenucamit@yahoo.com </a>
+                        <p>M.E.</p>
+                        <p>
+                          Communication (Pursuing Ph.D. at Manipur University)
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="Box_1">
+                    <div className="Box_1_align">
+                      <div className="member_img_container">
+                        <img
+                          className="member_img"
+                          src="./Images/Department/ECE/Members/img_6.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div className="member_info_box">
+                        <h3>A. Balarampyari Devi</h3>
+                        <h4>Assistant Professor </h4>
+                        <a href="/">balaramaribam@gmail.com </a>
+                        <p>M.Tech.</p>
+                        <p>VLSI & Embedded system</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="Box_1">
+                    <div className="tag_align">
+                      <div className="HOD_tag">
+                        <p className="hod_tag_text">HOD</p>
+                        <div className="tag_1"></div>
+                        <div className="tag_2"></div>
+                        <div className="tag_3"></div>
+                      </div>
+                    </div>
+                    <div className="Box_1_align">
+                      <div className="member_img_container">
+                        <img
+                          className="member_img"
+                          src="./Images/Department/ECE/Members/img_7.jpeg"
+                          alt=""
+                        />
+                      </div>
+                      <div className="member_info_box">
+                        <h3>Ghaneshori Thingbaijam</h3>
+                        <h4>Assistant Professor & HoD (wef 7-11-2023)</h4>
+                        <a href="/">ghaneth@yahoo.co.in </a>
+                        <p>M.E.</p>
+                        <p>Communication</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="Box_1">
+                    <div className="Box_1_align">
+                      <div className="member_img_container">
+                        <img
+                          className="member_img"
+                          src="./Images/Department/ECE/Members/img_8.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div className="member_info_box">
+                        <h3>Nemthianhoi Zou P</h3>
+                        <h4>Assistant Professor </h4>
+                        <p>M.Tech. (Electronics & Communication Engg.)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="Box_1">
+                    <div className="Box_1_align">
+                      <div className="member_img_container">
+                        <img
+                          className="member_img"
+                          src="./Images/Department/ECE/Members/img_9.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div className="member_info_box">
+                        <h3>Dr. Dickson Warepam</h3>
+                        <h4>Guest Faculty </h4>
+                        <a href="/">dicksonwarepam@gmail.com </a>
+                        <p>Ph.D. </p>
+                        <p>
+                          Optoelectronic Devices, Semiconductor Materials for
+                          Solar Cell, Micro Electronics and Control Systems
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="Box_1">
+                    <div className="Box_1_align">
+                      <div className="member_img_container">
+                        <img
+                          className="member_img"
+                          src="./Images/Department/ECE/Members/img_10.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div className="member_info_box">
+                        <h3>Dr. L. Kholee Phimu</h3>
+                        <h4>Guest Faculty </h4>
+                        <a href="/">kholeephimu@gmail.com </a>
+                        <p>Ph. D.</p>
+                        <p>Solar Cells, semiconductor devices</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="Box_1">
+                    <div className="Box_1_align">
+                      <div className="member_img_container">
+                        <img
+                          className="member_img"
+                          src="./Images/Department/ECE/Members/img_11.jpeg"
+                          alt=""
+                        />
+                      </div>
+                      <div className="member_info_box">
+                        <h3>Dr. Paikhomba Loktongbam</h3>
+                        <h4>Guest Faculty</h4>
+                        <a href="/">pailee.li81@gmail.com </a>
+                        <p>Ph. D.</p>
+                        <p>
+                          Design and Analytical Modelling of mm-wave dipole
+                          antennas, Biomedical implantable antennas
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="Dept_lab">
+              <h2>Facilities:</h2>
+              <div className="DepLab_wrapper">
+                <div className="ECE_lab_img">
+                  <br /><h3>COMMUNICATION LAB</h3>
+                  <img src="./Images/Department/ECE/img1.jpg" alt=""></img>
+                </div>
+                <div className="ECE_lab_img">
+                  <br /><h3>DIGITAL LAB</h3>
+                  <img src="./Images/Department/ECE/img2.png" alt=""></img>
+                </div>
+              </div>
+              <div className="">
+                <h2>MICROWAVE LAB</h2>
+                  <p>MCS-03 Microwave Communication Training System</p>
+                  <p>i) Microwave Transistor</p>
+                  <p>ii) Microwave Receiver</p>
+                  <p>iii) 15 numbers of different types of antenna</p><br />
+              </div>
+              <div>
+                <h2>ELECTRONIC DEVICE & CIRCUIT LAB</h2>
+                <p>CRO’s, Function Generators, Trainer Kits for various devices, Dual Power supply
+                variable power supply.</p>
+                <div className="ECE_lab_img">
+                  <img src="./Images/Department/ECE/img3.png" alt=""></img>
+                </div>
+              </div>
+            </div>
+            <div className="Dept_moreInfo">
+              <h2>Digital Signal Processing & Image Processing Laboratory.</h2>
+              <p>
+              The Laboratory is equipped with a good number Texas Instruments, DSP Kit with Add-on-Modules and Spectrum Analyzer for performing Digital Signal Processing experiments. Latest MATLAB Software is using for performing Digital Processing and Image Processing experiments.
+              </p><br />
+              <p>
+              Digital Laboratory: There are a good number of digital Trainer Kits and ICs, logic analysers, microprocessors, microcontrollers, data acquisition cards, stepper motor controller cards, relay & opto-coupler interfacing cards etc.
+              </p><br />
+              <p>
+              Instrumentation Laboratory: It is equipped with temperature transducers Thermocouple, IC sensor interfacing to PC, Industrial type of remote transmitter, PC based stepper motor, Servo driver etc.
+              </p><br />
+              <p>
+              Communication Laboratory: There are good numbers of kits for analog and digital communication microwave devices, TV Training Kit. AF Signal generators, AM, FM modulator & De-modulator, SSB Modulation & demodulation Kit, FSK Kit.
+              </p><br />
+              <p>Software: There are up-to-date office automation softwares, MATLAB, ORCARD.</p>
+            </div>
+          </div>
+          <div className="Right_main">
+            <LeftNotification />
+            <LeftDownload />
+            <LeftInformation />
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
+}
+
+export default ECE_dept;

@@ -1,0 +1,78 @@
+/* ================================== */
+/* --- Conference Marquee Styles --- */
+/* ================================== */
+
+/* The main container for the announcement bar */
+.conference-marquee-container {
+  /* COLOR UPDATE: Switched to a strong red for an urgent alert style */
+  background-color: #ae0d0d; /* A deep, urgent red */
+  color: #ffffff; /* White text for contrast */
+  padding: 12px 0;
+  /* Hides the text when it scrolls outside the container's bounds */
+  overflow: hidden;
+  /* Prevents the text inside from wrapping to a new line */
+  white-space: nowrap;
+  /* Ensures it stays at the top */
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* This wrapper holds the scrolling text */
+.marquee-content {
+  display: inline-block;
+  /* The animation that moves the text */
+  animation: marquee-scroll 45s linear infinite;
+}
+
+/* Pause the animation when the user hovers over it */
+.conference-marquee-container:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+/* The actual text block */
+.marquee-text {
+  display: inline-block;
+  /* Adds space between the repeated text blocks for a seamless loop */
+  padding-right: 60px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* The clickable link within the marquee */
+.marquee-link {
+  /* COLOR UPDATE: A light pink/red to contrast with the dark red background */
+  color: #fecaca;
+  text-decoration: underline;
+  font-weight: 700;
+  margin-left: 12px;
+  transition: color 0.2s ease;
+}
+
+.marquee-link:hover {
+  color: #ffffff;
+}
+
+/* The CSS animation for the scrolling effect */
+@keyframes marquee-scroll {
+  0% {
+    /* Starts with the text just off-screen to the right */
+    transform: translateX(0%);
+  }
+  100% {
+    /* Moves the text to the left by exactly half its total width,
+       which creates the seamless loop effect because the text is duplicated. */
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+  .marquee-text {
+    font-size: 0.9rem;
+  }
+  /* Speed up animation slightly on mobile where less text is visible */
+  .marquee-content {
+    animation-duration: 30s;
+  }
+}

@@ -1,0 +1,73 @@
+/* ======================================= */
+/* --- Desktop Dropdown Styles (Final) --- */
+/* ======================================= */
+
+/* Let the parent navbar component handle all positioning */
+.Facility_drop { }
+
+.Facility_drop_align {
+  /* FINAL COLOR: A precise light, minty cyan from your new image */
+  background-color: #287676cf; 
+  width: 100%;
+  min-width: 220px; 
+  border-radius: 8px; /* A slightly softer radius as seen in the image */
+  overflow: hidden;
+  /* Adds the subtle white border from your image */
+  border: 1px solid rgba(255, 255, 255, 0.7); 
+}
+
+.dropdown-link {
+  display: block;
+  text-decoration: none;
+  /* The text must be white to match the image */
+  color: #ffffff;
+}
+
+.Fcty_link_1 {
+  padding: 0.9rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  /* A semi-transparent white line is the best separator for this background */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  transition: background-color 0.2s ease;
+}
+
+.Fcty_link_1:hover {
+  /* A slightly darker version of the new color for the hover effect */
+  background-color: #8CCECE;
+  color: #ffffff; /* Keep text white on hover */
+}
+
+/* Removes the separator line from the last item */
+.last_link {
+  border-bottom: none; 
+}
+
+
+/* ======================================= */
+/* --- Mobile Styles (Unchanged) --- */
+/* ======================================= */
+@media (max-width: 1024px) {
+  .Facility_drop_align {
+    background-color: #f9f9f9;
+    width: 100%;
+    min-width: auto;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .Fcty_link_1 {
+    padding: 0.8rem 1.5rem;
+    border-bottom: 1px solid #e8e8e8;
+    font-size: 15px;
+    color: #333; /* Dark text for light mobile background */
+  }
+  
+  .Fcty_link_1:hover {
+    background-color: #e8e8e8;
+    color: #333;
+  }
+}

@@ -1,0 +1,80 @@
+/* ======================================= */
+/* --- Desktop Dropdown Styles --- */
+/* ======================================= */
+
+/* This container is handled by the parent navbar component */
+.FeePayment_drop {}
+
+.FeePayment_drop_align {
+  /* Applied semi-transparent teal background */
+  background-color: #287676cf;
+  width: 100%;
+  min-width: 220px;
+  /* Unified border-radius and border style */
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  overflow: hidden;
+}
+
+/* This is the container for each link */
+.fee_link_1 {
+  /* Matched padding */
+  padding: 0.9rem 1.2rem;
+  /* Separator line */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  transition: background-color 0.2s ease;
+}
+
+.fee_link_1:hover {
+  /* Applied new hover background color */
+  background-color: #8CCECE;
+}
+
+/* This styles the actual <a> tag inside the div */
+.fee_link_1 a {
+  /* Text must be white for the new background */
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  display: block; /* Ensures the link fills the container */
+}
+
+/* This targets the div to remove the last border */
+.last_link {
+  border-bottom: none;
+}
+
+/* ======================================= */
+/* --- Mobile Styles --- */
+/* ======================================= */
+@media (max-width: 1024px) {
+  .FeePayment_drop_align {
+    background-color: #f9f9f9;
+    width: 100%;
+    min-width: auto;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .fee_link_1 {
+    padding: 0; /* Remove padding from container */
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  .fee_link_1 a {
+    padding: 0.8rem 1.5rem;
+    font-size: 15px;
+    color: #333; /* Dark text for light mobile background */
+  }
+  
+  .fee_link_1:hover {
+    background-color: #e8e8e8;
+  }
+
+  .fee_link_1:hover a {
+    color: #333;
+  }
+}

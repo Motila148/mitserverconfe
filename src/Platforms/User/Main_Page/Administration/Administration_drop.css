@@ -1,0 +1,85 @@
+/* ======================================= */
+/* --- Desktop Dropdown Styles --- */
+/* ======================================= */
+
+/* This container is handled by the parent navbar component */
+.Administration_drop {}
+
+.Administration_drop_align {
+  /* COLOR UPDATE: Applied new semi-transparent teal background */
+  background-color: #287676cf;
+  width: 100%;
+  min-width: 220px; /* Matched min-width */
+  /* STYLE UPDATE: Unified border-radius and border style */
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  overflow: hidden;
+}
+
+.dropdown-link {
+  display: block;
+  text-decoration: none;
+  /* COLOR UPDATE: Text must be white for the new background */
+  color: #ffffff;
+}
+
+.dropdown-link:hover {
+  text-decoration: none;
+}
+
+.adm_link_1 {
+  /* STYLE UPDATE: Matched padding, font-size, and font-weight */
+  padding: 0.9rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  /* COLOR UPDATE: Text is white, border is semi-transparent white */
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  transition: background-color 0.2s ease;
+}
+
+.adm_link_1:hover {
+  /* COLOR UPDATE: Applied new hover background color */
+  background-color: #8CCECE;
+  color: #ffffff; /* Text remains white on hover */
+}
+
+.last_link {
+  border-bottom: none; /* This rule remains correct */
+}
+
+/* The .last_link:hover rule is no longer necessary and has been removed */
+
+
+/* ======================================= */
+/* --- Mobile Styles (Unchanged) --- */
+/* ======================================= */
+@media (max-width: 1024px) {
+  .Administration_drop_align {
+    background-color: #f9f9f9;
+    width: 100%;
+    min-width: auto;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .adm_link_1 {
+    padding: 0.7rem 1.5rem;
+    border-bottom: 1px solid #e8e8e8;
+    font-size: 15px;
+    color: #333; /* Dark text for light mobile background */
+  }
+  
+  .adm_link_1:hover {
+    background-color: #e8e8e8;
+    color: #333;
+  }
+  
+  .last_link:hover {
+    background-color: #e8e8e8;
+    color: #333;
+    border-radius: 0;
+  }
+}

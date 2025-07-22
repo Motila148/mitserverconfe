@@ -1,0 +1,167 @@
+/* General container for the submission and fees section */
+.submission-container {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #edecec;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Headings */
+.submission-container h2 {
+  font-size: 2rem;
+  color: #0d47a1; /* Dark Blue */
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.submission-container h3 {
+  font-size: 1.5rem;
+  color: #1565c0; /* Medium Blue */
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.submission-container h4.sub-heading {
+    font-size: 1.2rem;
+    color: #1976d2;
+    margin-top: 25px;
+}
+
+/* Paragraphs and Lists */
+.submission-container p, 
+.submission-container ul, 
+.submission-container ol {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.submission-container ul, .submission-container ol {
+  padding-left: 25px;
+}
+
+.submission-container .guidelines-list li, .submission-container .instructions-list li {
+  margin-bottom: 12px;
+}
+
+.submission-container strong {
+  color: #0d47a1;
+}
+
+/* Horizontal Rule */
+.submission-container hr {
+  border: none;
+  border-top: 1px solid #eeeeee;
+  margin: 40px 0;
+}
+
+/* Buttons and Links */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-primary {
+  background-color: #1976d2; /* Primary Blue */
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #1565c0; /* Darker Blue */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary {
+  background-color: #28a745; /* Green */
+  color: #ffffff;
+}
+
+.btn-secondary:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.link-button {
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px dashed #1976d2;
+  transition: color 0.3s ease;
+}
+
+.link-button:hover {
+  color: #0d47a1;
+  border-bottom-style: solid;
+}
+
+.links-list li {
+  list-style-type: none;
+}
+.links-list {
+  padding-left: 0;
+}
+
+/* Fees Table Styling */
+.table-container {
+    overflow-x: auto;
+}
+.fees-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.fees-table th, .fees-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border: 1px solid #e0e0e0;
+}
+
+.fees-table thead th {
+  background-color: #e3f2fd; /* Light Blue */
+  color: #0d47a1;
+  font-weight: 600;
+}
+
+.fees-table tbody tr:nth-of-type(even) {
+  background-color: #f7f9fc;
+}
+
+.fees-table tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+.participant-type {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.participant-icon {
+    font-size: 1.5rem;
+}
+
+.fee-note {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #6c757d;
+}

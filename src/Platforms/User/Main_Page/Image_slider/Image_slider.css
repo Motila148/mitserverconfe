@@ -1,0 +1,140 @@
+/* ================================== */
+/* --- Modern Image Slider Styles --- */
+/* ================================== */
+
+/* Main container for the slider */
+.image-slider-container {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden; /* This is key to making border-radius work */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+/* This is the individual slide's container */
+.slide-item {
+  /* Set a responsive height for the slider */
+  height: 28rem; 
+  background-color: #e0e0e0; /* Fallback color while image loads */
+}
+
+/* This styles the actual image tag */
+.slide-item img {
+  /* This ensures the image covers the container without distortion */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --- Styling the Carousel Library's Elements --- */
+
+/* Style for the caption text (legend) */
+.carousel .legend {
+  /* Overriding default styles without !important */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  opacity: 1;
+  font-size: 1rem;
+  padding: 2rem 1rem 1rem; /* More padding for better readability */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  transition: opacity 0.3s ease;
+}
+
+/* Style for the navigation arrows */
+.carousel.carousel-slider .control-arrow {
+  background: rgba(255, 255, 255, 0.9); /* Clean white background */
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  
+  /* Arrows are hidden by default */
+  opacity: 0;
+
+  /* FIX: Force vertical centering to override library defaults */
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+
+/* Arrows become visible when hovering over the slider container */
+.image-slider-container:hover .carousel.carousel-slider .control-arrow {
+  opacity: 1;
+}
+
+/* Make arrows slightly more interactive on hover */
+.carousel.carousel-slider .control-arrow:hover {
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Adjust arrow position */
+.carousel.carousel-slider .control-prev.control-arrow {
+  left: 15px;
+}
+.carousel.carousel-slider .control-next.control-arrow {
+  right: 15px;
+}
+
+/* Change the color of the arrow icon itself to be dark */
+.carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
+    border-top-width: 12px;
+    border-bottom-width: 12px;
+}
+.carousel .control-next.control-arrow:before {
+    border-left: 8px solid #333;
+}
+.carousel .control-prev.control-arrow:before {
+    border-right: 8px solid #333;
+}
+
+
+/* Style for the pagination dots at the bottom */
+.carousel .control-dots .dot {
+  /* Overriding default styles without !important */
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: none;
+  width: 10px;
+  height: 10px;
+  transition: all 0.2s ease;
+}
+
+.carousel .control-dots .dot.selected,
+.carousel .control-dots .dot:hover {
+  background: #ffffff;
+  transform: scale(1.2);
+}
+
+/* ================================== */
+/* --- Responsive Adjustments --- */
+/* ================================== */
+
+@media (max-width: 768px) {
+  .slide-item {
+    /* Reduce height on smaller screens */
+    height: 20rem;
+  }
+
+  .carousel .legend {
+    font-size: 0.8rem;
+    padding: 1.5rem 0.5rem 0.8rem;
+  }
+
+  /* Make arrows smaller on mobile */
+  .carousel.carousel-slider .control-arrow {
+    height: 40px;
+    width: 40px;
+  }
+  
+  /* Adjust arrow icon size for smaller buttons */
+  .carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+  }
+  .carousel .control-next.control-arrow:before {
+      border-left-width: 7px;
+  }
+  .carousel .control-prev.control-arrow:before {
+      border-right-width: 7px;
+  }
+}
