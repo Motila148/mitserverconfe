@@ -12,7 +12,7 @@ const internationalConferences = [
   {
     title: "NORTH EAST INTERNATIONAL CONFERENCE ON Innovation in Science and Technology (NE-ICIST 2025)",
     date: "9-11 December 2025",
-    href: "https://jocular-wisp-6a5493.netlify.app/", // Replace with the actual conference website URL
+    href: "https://neicist2025.in/", 
   },
 ];
 
