@@ -9,6 +9,61 @@ export function LeftNotification() {
           <h1>News and Notices</h1>
         </div>
         <div className="news_n_notices">
+          <div className="LeftNavigation_options">
+            <a
+              href="./Images/Notices/Notice_SpotBE_LE vacant_24-7-25.pdf"
+              target="_blank"
+              rel=""
+            >
+              <div className="notice-header">
+                <b>Online Application for Vacant B.E(Lateral Entry) Seats – 2025-26</b>
+                <button className="new-button blinking">NEW</button>
+              </div>
+              <div className="notice-date">Posted: July 24, 2025</div>
+            </a>
+          </div>
+
+          <div className="LeftNavigation_options">
+            <a
+              href="./Images/Notices/Reallocation notice_BE programme_24-7-25.pdf"
+              target="_blank"
+              rel=""
+            >
+              <div className="notice-header">
+                <b>Reallocation Notice – Admitted Students in B.E. Programs</b>
+                <button className="new-button blinking">NEW</button>
+              </div>
+              <div className="notice-date">Posted: July 24, 2025</div>
+            </a>
+          </div>
+
+          <div className="LeftNavigation_options">
+            <a
+              href="./Images/Notices/Admission Notice_MTech.BE2025_2026.pdf"
+              target="_blank"
+              rel=""
+            >
+              <div className="notice-header">
+                <b>Admission Notice – Provisionally recommended candidates for M.Tech & B.E</b>
+                <button className="new-button blinking">NEW</button>
+              </div>
+              <div className="notice-date">Posted: July 24, 2025</div>
+            </a>
+          </div>
+
+          <div className="LeftNavigation_options">
+            <a
+              href="./Images/Notices/Notice_Spot_BE_MTECH vacant_23_7_25.pdf"
+              target="_blank"
+              rel=""
+            >
+              <div className="notice-header">
+                <b>Online Application for Vacant Seats B.E & M.Tech – Academic Session 2025–26</b>
+                <button className="new-button blinking">NEW</button>
+              </div>
+              <div className="notice-date">Posted: July 23, 2025</div>
+            </a>
+          </div>
 
           <div className="LeftNavigation_options">
             <a
@@ -16,8 +71,10 @@ export function LeftNotification() {
               target="_blank"
               rel=""
             >
-              <b>Counselling Schedule for Admission to B.E. & M.Tech. Programmes – Session 2025–2026</b>
-              <button className="new-button blinking">NEW</button>
+              <div className="notice-header">
+                <b>Counselling Schedule for Admission to B.E. & M.Tech. Programmes – Session 2025–2026</b>
+              </div>
+              <div className="notice-date">Posted: July 17, 2025</div>
             </a>
           </div>
 
@@ -27,8 +84,10 @@ export function LeftNotification() {
               target="_blank"
               rel=""
             >
-              <b>Admission Notice – Provisionally Selected First-Year B.E. Students (Non-JEE)</b>
-              <button className="new-button blinking">NEW</button>
+              <div className="notice-header">
+                <b>Admission Notice – Provisionally Selected First-Year B.E. Students (Non-JEE)</b>
+              </div>
+              <div className="notice-date">Posted: July 8, 2025</div>
             </a>
           </div>
 
@@ -38,8 +97,10 @@ export function LeftNotification() {
               target="_blank"
               rel=""
             >
-              <b>Reallocation Notice – B.E. First Semester (Non-JEE Category), MIT Imphal</b>
-              <button className="new-button blinking">NEW</button>
+              <div className="notice-header">
+                <b>Reallocation Notice – B.E. First Semester (Non-JEE Category), MIT Imphal</b>
+              </div>
+              <div className="notice-date">Posted: July 8, 2025</div>
             </a>
           </div>
 
@@ -49,8 +110,10 @@ export function LeftNotification() {
               target="_blank"
               rel=""
             >
-              <b>Admission Notice (Non-JEE) – Candidate List for B.E.</b>
-              {/* <button className="new-button blinking">NEW</button> */}
+              <div className="notice-header">
+                <b>Admission Notice (Non-JEE) – Candidate List for B.E.</b>
+              </div>
+              <div className="notice-date">Posted: June 30, 2025</div>
             </a>
           </div>
 
@@ -60,8 +123,10 @@ export function LeftNotification() {
               target="_blank"
               rel=""
             >
-              <b>Branch Reallocation Notice for JEE Category Candidates - B.E. Session 2025-2026</b>
-              {/* <button className="new-button blinking">NEW</button> */}
+              <div className="notice-header">
+                <b>Branch Reallocation Notice for JEE Category Candidates - B.E. Session 2025-2026</b>
+              </div>
+              <div className="notice-date">Posted: June 24, 2025</div>
             </a>
           </div>
 
@@ -71,20 +136,23 @@ export function LeftNotification() {
               target="_blank"
               rel=""
             >
-              <b>EXTENDED ADMISSION NOTICE</b>
-              {/* <button className="new-button blinking">NEW</button> */}
+              <div className="notice-header">
+                <b>EXTENDED ADMISSION NOTICE</b>
+              </div>
+              <div className="notice-date">Posted: June 11, 2025</div>
             </a>
           </div>
 
-  <div className="LeftNavigation_options">
+          <div className="LeftNavigation_options">
             <a
               href="./Images/Notices/press release_9-6-25.pdf"
               target="_blank"
               rel=""
             >
-              <b> Press Release  Notice for Admission Schedule Postponed for B.E. & M.Tech. Programmes (2025-2026)
- </b>
-              {/* <button className="new-button blinking">NEW</button> */}
+              <div className="notice-header">
+                <b>Press Release Notice for Admission Schedule Postponed for B.E. & M.Tech. Programmes (2025-2026)</b>
+              </div>
+              <div className="notice-date">Posted: June 9, 2025</div>
             </a>
           </div>
 
@@ -94,18 +162,23 @@ export function LeftNotification() {
               target="_blank"
               rel=""
             >
-              <b>BE recommended candidates(JEE Qualified) </b>
-              {/* <button className="new-button blinking">NEW</button> */}
+              <div className="notice-header">
+                <b>BE recommended candidates(JEE Qualified)</b>
+              </div>
+              <div className="notice-date">Posted: June 6, 2025</div>
             </a>
           </div>
+
           <div className="LeftNavigation_options">
             <a
               href="./Images/Notices/notice extended_4-6-25.pdf"
               target="_blank"
               rel=""
             >
-              <b>Extended admission notice for 2025-26</b>
-              {/* <button className="new-button blinking">NEW</button> */}
+              <div className="notice-header">
+                <b>Extended admission notice for 2025-26</b>
+              </div>
+              <div className="notice-date">Posted: June 4, 2025</div>
             </a>
           </div>
 
@@ -115,8 +188,10 @@ export function LeftNotification() {
               target="_blank"
               rel=""
             >
-              <b>New admission notice for 2025-26</b>
-              {/* <button className="new-button blinking">NEW</button> */}
+              <div className="notice-header">
+                <b>New admission notice for 2025-26</b>
+              </div>
+              <div className="notice-date">Posted: May 26, 2025</div>
             </a>
           </div>
 
@@ -133,26 +208,6 @@ export function LeftNotification() {
               </a>
             </b>
           </div>
-
-          {/* <div className="LeftNavigation_options">
-            <a
-              href="./Images/Notices/Boys Hostel admission 11 02 25.pdf"
-              target="_blank"
-              rel=""
-            >
-              Boys' Hostel Admission
-            </a>
-          </div>
-
-          <div className="LeftNavigation_options">
-            <a
-              href="./Images/Notices/Girls Hostel Admission.pdf"
-              target="_blank"
-              rel=""
-            >
-              Girls' Hostel Admission
-            </a>
-          </div> */}
         </div>
       </div>
     </div>

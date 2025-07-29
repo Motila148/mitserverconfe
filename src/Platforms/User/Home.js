@@ -21,11 +21,12 @@ function Home() {
 
         <div className="HomePage_wrapper">
           <Image_slider />
-          <ConferenceMarquee
-            message="NE-ICIST 2025 Call for Papers: Submit your abstract by 5th August!" 
-            link="https://jocular-wisp-6a5493.netlify.app/"
+          
+            <ConferenceMarquee
+            message="NE-ICIST 2025 Call for Papers: Submit your abstract by 15th August!" 
+            link="https://neicist2025.in/"
             linkText="Click here to visit the website."
-          />
+            />
           
           <div className="HomePage_top_link">
             <a
