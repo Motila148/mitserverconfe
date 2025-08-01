@@ -11,6 +11,20 @@ export function LeftNotification() {
         <div className="news_n_notices">
           <div className="LeftNavigation_options">
             <a
+              href="./Images/Notices/Admission Notice_Against Vacant_1-8-2025.pdf"
+              target="_blank"
+              rel=""
+            >
+              <div className="notice-header">
+                <b>List of Candidates Recommended for Admission Against Vacant Seats</b>
+                <button className="new-button blinking">NEW</button>
+              </div>
+              <div className="notice-date">Posted: August 1, 2025</div>
+            </a>
+          </div>
+
+          <div className="LeftNavigation_options">
+            <a
               href="./Images/Notices/Notice_SpotBE_LE vacant_24-7-25.pdf"
               target="_blank"
               rel=""
@@ -59,7 +73,6 @@ export function LeftNotification() {
             >
               <div className="notice-header">
                 <b>Online Application for Vacant Seats B.E & M.Tech – Academic Session 2025–26</b>
-                <button className="new-button blinking">NEW</button>
               </div>
               <div className="notice-date">Posted: July 23, 2025</div>
             </a>
