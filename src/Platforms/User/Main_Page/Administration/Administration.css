@@ -1,107 +1,188 @@
-.Administration_container {
-  padding: 1rem;
-  height: 100vh;
-}
-.Administration_align{
-  margin-bottom: 2rem;
-}
-.Administration_Tittle {
-  background-color: #e9f7fe;
-  color: #5091b2;
-  border: 1px solid #b6d7e8;
-  font-family: Arial, sans-serif;
-  font-size: 26px;
-  margin-bottom: 15px;
-  padding: 14px 40px 14px 18px;
-  box-shadow: 0px 1px 1px 0px rgba(180, 180, 180, 0.1);
-}
-.Administration_wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-.Administration_Header_container {
-  width: 100%;
-  font-size: 22px;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-.Administration_body{
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-.Administration_main{
-  background-color: rgb(230, 255, 247);
-  width: 80%;
-  height: 100vh;
-  padding-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow-y: scroll;
-}
-.Administration_main h1{
-  margin-left: 1rem;
-  font-size: 20px;
-  font-weight: 500;
-}
-.Administration_main h3{
-  margin-left: 1rem;
-  margin-top: 1rem;
-  font-size: 16px;
-  font-weight: 500;
-}
-.Administration_table{
-  display: flex;
-}
-.Administration_table ol{
-  margin-top: 1rem;
-  margin-left: 3rem;
-  list-style: decimal;
-  margin-right: 2rem;
-}
-.Administration_table_links{
-  margin-top: 1rem;
-}
-.Administration_table_links a{
-  margin-left: 2rem;
-  display: flex;
-  flex-direction: column;
-  line-height: 26px;
-  text-decoration: none;
-    font-size: 16px;
-    font-weight: 400;
-    color: #5ca20d;
-}
-.Administration_right{
-  width: 25%;
-  height: 100vh;
-  overflow-y: scroll;
+/* Administration.css - TRUE MOBILE-FIRST REDESIGN */
+
+/* 1. FONT IMPORT & ROOT VARIABLES */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+:root {
+  --font-family-base: 'Roboto', sans-serif;
+  --bg-page: #f4f5f7;
+  --bg-card: #ffffff;
+  --text-primary: #2d3748;
+  --text-secondary: #718096;
+  --accent-color: #0056b3; /* Professional Blue */
+  --border-color: #e2e8f0;
+  --shadow-color: rgba(45, 55, 72, 0.1);
 }
 
-.Dynamic_info{
-  background-color: red;
-  text-align: center;
+/* 2. BASE & MOBILE STYLES (Default) */
+/* These styles apply to all screen sizes unless overridden by a min-width media query */
+
+.page-container {
+  background-color: var(--bg-page);
+  font-family: var(--font-family-base);
 }
-.align_img{
+
+.main-content {
+  width: 100%;
+  padding: 1.5rem 1rem; /* Mobile-first padding */
+}
+
+.content-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* On mobile, the hero section stacks by default (column layout) */
+.hero-section {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
+  flex-direction: column; /* Stacking is the default mobile view */
+  background: var(--bg-card);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px var(--shadow-color);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
 }
-.text_box{
-  margin-top: 1rem;
-  margin-left: 2rem;
+
+.hero-image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-text-container {
+  padding: 2rem 1.5rem;
+  text-align: center; /* Centered text looks good when stacked */
+}
+
+.hero-title {
+  color: var(--text-primary);
+  font-size: 1.75rem; /* Mobile font size */
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0 0 1rem 0;
+}
+
+.hero-designation {
+  color: var(--accent-color);
+  font-size: 1.1rem; /* Mobile font size */
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.hero-designation--secondary {
+  color: var(--text-secondary);
+  font-size: 1rem; /* Mobile font size */
+  margin-top: 0.25rem;
+}
+
+/* On mobile, content and sidebar stack by default (natural block flow) */
+.page-layout-wrapper {
+  display: flex;
+  flex-direction: column; /* Stacking is the default */
+  gap: 1.5rem;
+}
+
+.primary-content-card {
+  background-color: var(--bg-card);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px var(--shadow-color);
+}
+
+.primary-content-card h2 {
+  font-size: 1.5rem; /* Mobile font size */
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.75rem;
+}
+
+.primary-content-card p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.sidebar-content {
   display: flex;
   flex-direction: column;
-  gap: .6rem;
+  gap: 1.5rem;
 }
-.Administration_main_info_text_header{
-  font-size: 20px;
-  font-weight: 500;
+
+.main-content {
+  width: 100%;
+  /* REMOVED horizontal padding. We only control vertical padding here. */
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+
+/* 3. TABLET & DESKTOP STYLES (Progressive Enhancement) */
+/* We ADD complexity as the screen gets larger */
+
+/* For tablets and medium screens (768px and wider) */
+@media (min-width: 768px) {
+  .main-content {
+    padding: 2.5rem 1.5rem; /* Increase padding */
+  }
+
+  /* Switch to a side-by-side layout for the hero section */
+  .hero-section {
+    flex-direction: row;
+  }
+
+  .hero-image-container {
+    flex: 0 0 40%;
+  }
+  .hero-image-container img {
+    height: 100%;
+  }
+
+  .hero-text-container {
+    flex: 1;
+    padding: 2.5rem;
+    text-align: left; /* Align text to the left for side-by-side view */
+  }
+
+  .hero-title {
+    font-size: 2.25rem; /* Increase font size */
+  }
+
+  /* Switch to a side-by-side layout for the main content */
+  .page-layout-wrapper {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+  .primary-content-card {
+    flex: 3;
+    padding: 2rem;
+  }
+  .sidebar-content {
+    flex: 1;
+    min-width: 280px;
+  }
+}
+
+/* For large desktops (1024px and wider) */
+@media (min-width: 1024px) {
+  .hero-text-container {
+    padding: 3rem 3.5rem; /* More space on large screens */
+  }
+  .hero-title {
+    font-size: 2.75rem; /* Final, largest font size */
+  }
+  .hero-designation {
+    font-size: 1.25rem;
+  }
+  .hero-designation--secondary {
+    font-size: 1.15rem;
+  }
+  .primary-content-card h2 {
+    font-size: 1.75rem;
+  }
 }

@@ -5,19 +5,18 @@
 
 /* 2. Define a modern color palette and base styles */
 :root {
-  --primary-text-color: #343a40; /* Dark Charcoal */
-  --heading-color: #2c3e50;      /* Darker Blue/Grey */
-  --accent-color: #0056b3;       /* Professional Blue */
-  --background-color: #f8f9fa;  /* Light Grey */
-  --divider-color: #e0e0e0;       /* Light divider line */
+  --primary-text-color: #343a40;
+  --heading-color: #2c3e50; 
+  --accent-color: #0056b3; 
+  --background-color: #f8f9fa;
+  --divider-color: #e0e0e0;    
 }
 
 /* 3. Main content container styling */
 .MainContent {
-  /* Let the body handle scrolling, provide padding for breathing room */
   padding: 4rem 0; 
   background-color: var(--background-color);
-  font-family: 'Lato', sans-serif; /* Set default font for body text */
+  font-family: 'Lato', sans-serif;
   color: var(--primary-text-color);
   line-height: 1.7; /* Improve readability */
 }
@@ -25,8 +24,8 @@
 /* 4. Align content and set a max-width for readability on large screens */
 .MainContent_align {
   width: 90%;
-  max-width: 900px; /* Optimal reading width */
-  margin: 0 auto; /* Center the container */
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* 5. Style the main heading (h1) */
@@ -37,7 +36,7 @@
   color: var(--accent-color);
   line-height: 1.3;
   margin-bottom: 2rem;
-  text-align: center; /* Center the main title */
+  text-align: center;
 }
 
 /* 6. Style the section headings (h2) */
@@ -46,10 +45,10 @@
   font-size: 1.5rem; /* 24px - Desktop */
   font-weight: 600;
   color: var(--heading-color);
-  margin-top: 3rem; /* Generous space above each new section */
+  margin-top: 3rem; 
   margin-bottom: 1.5rem;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--divider-color); /* Subtle separator line */
+  border-bottom: 2px solid var(--divider-color);
 }
 
 /* 7. Style the sub-headings (h3) */
@@ -65,13 +64,13 @@
 /* 8. Style the paragraphs for clarity */
 .MainContent_Wrapper p {
   font-size: 1rem; /* 16px */
-  margin-bottom: 1rem; /* Space after each paragraph */
+  margin-bottom: 1rem;
 }
 
 /* 9. Style the unordered list */
 .MainContent_Wrapper ul {
-  list-style: none; /* Remove default bullets */
-  padding-left: 0; /* Remove default padding */
+  list-style: none;
+  padding-left: 0;
   margin-top: 1rem;
 }
 
@@ -84,7 +83,7 @@
 }
 
 .MainContent_Wrapper li::before {
-  content: '➤'; /* You can use other symbols like '•', '➤', or unicode characters */
+  content: '➤';
   position: absolute;
   left: 0;
   top: 1px;
@@ -93,11 +92,6 @@
 }
 
 
-/*
- =========================================
-  11. Mobile Responsiveness (New Section)
- =========================================
-*/
 
 /* Apply these styles on screens 768px wide or smaller */
 @media (max-width: 768px) {
@@ -109,17 +103,15 @@
 
   /* Reduce heading font sizes */
   .MainContent_Wrapper h1 {
-    font-size: 1.8rem; /* ~29px - Mobile */
+    font-size: 1.8rem;
   }
 
   .MainContent_Wrapper h2 {
-    font-size: 1.3rem; /* ~21px - Mobile */
-    margin-top: 2.5rem; /* Reduce top margin for sections */
+    font-size: 1.3rem;
+    margin-top: 2.5rem;
   }
 
   .MainContent_Wrapper h3 {
     font-size: 1.1rem; /* ~18px - Mobile */
   }
-
-  /* The body font size of 1rem is already great for mobile, so no change is needed. */
 }

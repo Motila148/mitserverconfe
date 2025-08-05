@@ -1,0 +1,182 @@
+/* inst_administration.css - Styles for the Institute Administration Page */
+
+/* 1. FONT IMPORT & ROOT VARIABLES */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+:root {
+  --font-family-base: 'Roboto', sans-serif;
+  --bg-page: #f4f5f7;
+  --bg-card: #ffffff;
+  --text-primary: #2d3748;
+  --text-secondary: #718096;
+  --accent-color: #0056b3;
+  --border-color: #e2e8f0;
+  --table-header-bg: #f8f9fa;
+  --table-row-hover-bg: #f1f5f9;
+  --shadow-color: rgba(45, 55, 72, 0.1);
+}
+
+/* 2. UNIVERSAL CONTAINER & PAGE LAYOUT */
+/* Note: For best practice, the .container class could live in a global file like index.css */
+.container {
+  width: 90%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-container {
+  background-color: var(--bg-page);
+  font-family: var(--font-family-base);
+}
+
+.main-content {
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* 3. BASE & MOBILE STYLES */
+/* Page content stacks on mobile by default */
+.page-layout-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.primary-content-card {
+  background-color: var(--bg-card);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px var(--shadow-color);
+}
+
+.primary-content-card h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.primary-content-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 2rem 0 1rem 0;
+}
+
+.primary-content-card p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin: 0 0 1rem 0;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* 4. STYLES FOR TABLES */
+.table-container {
+  overflow-x: auto; /* Allows table to be scrolled horizontally on small screens */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+thead th {
+  background-color: var(--table-header-bg);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: var(--table-header-bg);
+}
+
+tbody tr:hover {
+  background-color: var(--table-row-hover-bg);
+}
+
+td:first-child {
+  font-weight: 500;
+  color: var(--text-primary);
+  width: 1%; /* Keeps the number column narrow */
+}
+
+
+/* 5. STYLES FOR DOCUMENT LIST */
+.document-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.document-list li {
+  margin-bottom: 0.5rem;
+}
+
+.document-list a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.document-list a:hover {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+
+/* 6. TABLET & DESKTOP STYLES (Progressive Enhancement) */
+@media (min-width: 768px) {
+  .main-content {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .page-layout-wrapper {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+
+  .primary-content-card {
+    flex: 3;
+    padding: 2rem;
+  }
+
+  .sidebar-content {
+    flex: 1;
+    min-width: 280px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .primary-content-card h2 {
+    font-size: 1.75rem;
+  }
+
+  .primary-content-card h3 {
+    font-size: 1.3rem;
+  }
+}
