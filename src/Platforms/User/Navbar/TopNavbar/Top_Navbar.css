@@ -41,16 +41,16 @@
   }
 
   /* --- NEW STYLES FOR THE DATE/TIME DISPLAY --- */
-  .top-navbar__datetime {
-    background-color: #36abd9;
-    color: #333;
-    border: 1px solid #ccc;
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-    font-weight: 500;
-    border-radius: 6px;
-    white-space: nowrap; /* Prevents the time from wrapping to a new line */
-  }
+ .top-navbar__datetime {
+  background-color: #e0f2f1; /* A very light teal */
+  color: #004d40;             /* A dark teal for text */
+  border: 1px solid #b2dfdb;  /* A light teal border */
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 6px;
+  white-space: nowrap;
+}
 
   .admin-panel {
     display: flex;
