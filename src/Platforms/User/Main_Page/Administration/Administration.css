@@ -1,4 +1,4 @@
-/* Administration.css - TRUE MOBILE-FIRST REDESIGN */
+/* Administration.css - FINAL UNIFIED & MOBILE-FIRST VERSION */
 
 /* 1. FONT IMPORT & ROOT VARIABLES */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
@@ -9,33 +9,31 @@
   --bg-card: #ffffff;
   --text-primary: #2d3748;
   --text-secondary: #718096;
-  --accent-color: #0056b3; /* Professional Blue */
+  --accent-color: #0056b3;
   --border-color: #e2e8f0;
   --shadow-color: rgba(45, 55, 72, 0.1);
 }
 
-/* 2. BASE & MOBILE STYLES (Default) */
-/* These styles apply to all screen sizes unless overridden by a min-width media query */
-
+/* 2. PAGE STRUCTURE */
 .page-container {
   background-color: var(--bg-page);
   font-family: var(--font-family-base);
 }
 
+/* This only controls the background and vertical spacing */
 .main-content {
   width: 100%;
-  padding: 1.5rem 1rem; /* Mobile-first padding */
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
-.content-wrapper {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-/* On mobile, the hero section stacks by default (column layout) */
-.hero-section {
+/* 3. BASE & MOBILE STYLES (Content inside the .container) */
+.page-layout-wrapper, .hero-section {
   display: flex;
-  flex-direction: column; /* Stacking is the default mobile view */
+  flex-direction: column; /* Stacks everything on mobile by default */
+}
+
+.hero-section {
   background: var(--bg-card);
   border-radius: 16px;
   box-shadow: 0 4px 20px var(--shadow-color);
@@ -52,12 +50,12 @@
 
 .hero-text-container {
   padding: 2rem 1.5rem;
-  text-align: center; /* Centered text looks good when stacked */
+  text-align: center;
 }
 
 .hero-title {
   color: var(--text-primary);
-  font-size: 1.75rem; /* Mobile font size */
+  font-size: 1.75rem;
   font-weight: 900;
   line-height: 1.2;
   margin: 0 0 1rem 0;
@@ -65,7 +63,7 @@
 
 .hero-designation {
   color: var(--accent-color);
-  font-size: 1.1rem; /* Mobile font size */
+  font-size: 1.1rem;
   font-weight: 500;
   line-height: 1.5;
   margin: 0;
@@ -73,14 +71,11 @@
 
 .hero-designation--secondary {
   color: var(--text-secondary);
-  font-size: 1rem; /* Mobile font size */
+  font-size: 1rem;
   margin-top: 0.25rem;
 }
 
-/* On mobile, content and sidebar stack by default (natural block flow) */
 .page-layout-wrapper {
-  display: flex;
-  flex-direction: column; /* Stacking is the default */
   gap: 1.5rem;
 }
 
@@ -92,7 +87,7 @@
 }
 
 .primary-content-card h2 {
-  font-size: 1.5rem; /* Mobile font size */
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--text-primary);
   margin-top: 0;
@@ -108,30 +103,19 @@
   margin-bottom: 1rem;
 }
 
+/* Sidebar is hidden on mobile, but styles are ready if you add it */
 .sidebar-content {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.main-content {
-  width: 100%;
-  /* REMOVED horizontal padding. We only control vertical padding here. */
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  display: none;
 }
 
 
-/* 3. TABLET & DESKTOP STYLES (Progressive Enhancement) */
-/* We ADD complexity as the screen gets larger */
-
-/* For tablets and medium screens (768px and wider) */
+/* 4. TABLET & DESKTOP STYLES (Progressive Enhancement) */
 @media (min-width: 768px) {
   .main-content {
-    padding: 2.5rem 1.5rem; /* Increase padding */
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
-  /* Switch to a side-by-side layout for the hero section */
   .hero-section {
     flex-direction: row;
   }
@@ -139,6 +123,7 @@
   .hero-image-container {
     flex: 0 0 40%;
   }
+
   .hero-image-container img {
     height: 100%;
   }
@@ -146,35 +131,39 @@
   .hero-text-container {
     flex: 1;
     padding: 2.5rem;
-    text-align: left; /* Align text to the left for side-by-side view */
+    text-align: left;
   }
 
   .hero-title {
-    font-size: 2.25rem; /* Increase font size */
+    font-size: 2.25rem;
   }
 
-  /* Switch to a side-by-side layout for the main content */
   .page-layout-wrapper {
     flex-direction: row;
     gap: 2.5rem;
   }
+  
   .primary-content-card {
     flex: 3;
     padding: 2rem;
   }
+
   .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
     flex: 1;
     min-width: 280px;
   }
 }
 
-/* For large desktops (1024px and wider) */
+/* For large desktops */
 @media (min-width: 1024px) {
   .hero-text-container {
-    padding: 3rem 3.5rem; /* More space on large screens */
+    padding: 3rem 3.5rem;
   }
   .hero-title {
-    font-size: 2.75rem; /* Final, largest font size */
+    font-size: 2.75rem;
   }
   .hero-designation {
     font-size: 1.25rem;

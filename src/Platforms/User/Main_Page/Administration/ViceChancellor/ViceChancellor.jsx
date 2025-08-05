@@ -1,8 +1,5 @@
 import { Footer } from "../../../Footer/Footer";
 import { Navbar } from "../../../Navbar/Navbar";
-import { LeftDownload } from "../../MainContent/LocalNavigation/Left_Download/LeftDownload";
-import { LeftInformation } from "../../MainContent/LocalNavigation/Left_Information/LeftInformation";
-import { LeftNotification } from "../../MainContent/LocalNavigation/Left_Notice/LeftNotification";
 import "../Administration.css";
 
 function ViceChancellor() {
@@ -11,9 +8,9 @@ function ViceChancellor() {
       <Navbar />
 
       <main className="main-content">
-        <div className="content-wrapper">
+        {/* CORRECTED: Use the universal .container class for alignment */}
+        <div className="container">
           
-          {/* 1. HERO SECTION: Full Image + Title */}
           <section className="hero-section">
             <div className="hero-image-container">
               <img
@@ -21,7 +18,6 @@ function ViceChancellor() {
                 alt="Prof. Naorem Lokendra Singh, Vice-Chancellor of Manipur University"
               />
             </div>
-            {/* THIS IS THE UPDATED SECTION */}
             <div className="hero-text-container">
               <h1 className="hero-title">
                 Prof. Naorem Lokendra Singh
@@ -34,6 +30,7 @@ function ViceChancellor() {
               </p>
             </div>
           </section>
+          
         </div>
       </main>
 

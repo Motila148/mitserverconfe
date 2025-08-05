@@ -1,8 +1,5 @@
 import { Footer } from "../../../Footer/Footer";
 import { Navbar } from "../../../Navbar/Navbar";
-import { LeftDownload } from "../../MainContent/LocalNavigation/Left_Download/LeftDownload";
-import { LeftInformation } from "../../MainContent/LocalNavigation/Left_Information/LeftInformation";
-import { LeftNotification } from "../../MainContent/LocalNavigation/Left_Notice/LeftNotification";
 import "../Administration.css";
 
 function Principal() {
@@ -11,9 +8,9 @@ function Principal() {
       <Navbar />
 
       <main className="main-content">
-        <div className="content-wrapper">
+        {/* CORRECTED: Use the universal .container class for alignment */}
+        <div className="container">
 
-          {/* BLOCK 1: The Hero Section for the photo and titles */}
           <section className="hero-section">
             <div className="hero-image-container">
               <img
@@ -34,16 +31,17 @@ function Principal() {
             </div>
           </section>
 
-          {/* This wrapper holds the biography and the sidebar */}
+          {/* This wrapper holds the biography */}
           <div className="page-layout-wrapper">
 
-            {/* BLOCK 2: The Primary Content Card for the biography */}
             <article className="primary-content-card">
               <h2>About the Principal</h2>
               <p>
                 <strong>Prof. N. Basanta Singh</strong> was born in Imphal, Manipur, India. He received B-Tech degree from T.K.M. College of Engineering, Kerala, M.E from Thapar Institute of Engineering & Technology, Patiala and the Ph.D Degree from National Institute of Technology, Durgapur. He is a Professor in Department of Electronics & Communication Engineering, Manipur Institute of Technology, Manipur University, Manipur, India. He was the Head of the Department of Electronics & Communication Engineering, Manipur Institute of Technology during 2002-2008 and 2010-2014 and Coordinator of Industry-Institute-Interaction Cell (III Cell) of the institute from 2014. He is Member of IEEE, CSI, IETE and Life fellow of The Institution of Engineers (India). He has successfully organized four Refresher/Short Term Courses and one National Conference as Convener. He has attended more than 32 Workshops/ Refresher/Short Term Courses. He has published more than 64 (journal:41 & conference: 23) technical research papers in referred journals and conferences. His current research interest includes Modelling and Simulation of Semiconductor Devices.
               </p>
             </article>
+
+            {/* If you wanted a sidebar here, you would add <aside className="sidebar-content">...</aside> */}
 
           </div>
         </div>
