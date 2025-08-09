@@ -12,6 +12,20 @@ export function LeftNotification() {
 
           <div className="LeftNavigation_options">
             <a
+              href="./Images/Notices/Notice for walk in Interview.pdf"
+              target="_blank"
+              rel=""
+            >
+              <div className="notice-header">
+                <b>Walk-in Interview for the Post of Project Associate</b>
+                <button className="new-button blinking">NEW</button>
+              </div>
+              <div className="notice-date">Posted: August 9, 2025</div>
+            </a>
+          </div>
+
+          <div className="LeftNavigation_options">
+            <a
               href="./Images/Notices/Branch_change.pdf"
               target="_blank"
               rel=""
