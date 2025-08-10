@@ -22,12 +22,16 @@ function Home() {
         <div className="HomePage_wrapper">
           <Image_slider />
           
-            <ConferenceMarquee
-            message="NE-ICIST 2025 Call for Papers: Submit your abstract by 15th August!" 
-            link="https://neicist2025.in/"
-            linkText="Click here to visit the website."
-            />
-          
+          <ConferenceMarquee 
+              message={
+                  <>
+                      NE-ICIST 2025 Call for Papers: Submit your abstract by <s>15th August</s> 30th August!
+                  </>
+              } 
+              link="https://neicist2025.in/" 
+              linkText="Click here to visit the website." 
+          />
+
           <div className="HomePage_top_link">
             <a
               href="https://mitimphal.in/uploads/media/m1592044423.pdf"
