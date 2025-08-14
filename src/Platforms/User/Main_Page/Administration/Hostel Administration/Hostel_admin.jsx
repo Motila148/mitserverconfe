@@ -45,7 +45,8 @@ function Hostel_admin() {
                     <BoysHostelIcon />
                   </div>
                   <h3 className="warden-card__name">Dr. S. Jitu Singh</h3>
-                  <p className="warden-card__department">Asst. Prof. of CSE Dept.</p>
+                  <p className="warden-card__department">Associate Professor <br />Department of Computer Science and Engineering</p>
+
                   <p className="warden-card__role">Warden, Boys' Hostel</p>
                 </div>
 
