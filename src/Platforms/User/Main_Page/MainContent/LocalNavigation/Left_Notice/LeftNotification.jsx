@@ -10,6 +10,20 @@ export function LeftNotification() {
         </div>
         <div className="news_n_notices">
 
+           <div className="LeftNavigation_options">
+            <a
+              href="./Images/Notices/Hostel accomodation2025 .pdf"
+              target="_blank"
+              rel=""
+            >
+              <div className="notice-header">
+                <b>MIT Boys’ Hostel Room Allocation Notice</b>
+                <button className="new-button blinking">NEW</button>
+              </div>
+              <div className="notice-date">Posted: August 9, 2025</div>
+            </a>
+          </div>
+
           <div className="LeftNavigation_options">
             <a
               href="./Images/Notices/Notice for walk in Interview.pdf"
@@ -45,7 +59,6 @@ export function LeftNotification() {
             >
               <div className="notice-header">
                 <b>List of Candidates Recommended for Admission Against Vacant Seats</b>
-                <button className="new-button blinking">NEW</button>
               </div>
               <div className="notice-date">Posted: August 1, 2025</div>
             </a>
