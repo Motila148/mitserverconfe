@@ -20,7 +20,7 @@ export function LeftNotification() {
                 <b>MIT Boys’ Hostel Room Allocation Notice</b>
                 <button className="new-button blinking">NEW</button>
               </div>
-              <div className="notice-date">Posted: August 9, 2025</div>
+              <div className="notice-date">Posted: August 15, 2025</div>
             </a>
           </div>
 
