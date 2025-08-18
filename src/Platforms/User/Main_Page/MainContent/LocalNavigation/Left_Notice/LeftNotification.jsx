@@ -31,7 +31,7 @@ export function LeftNotification() {
               rel=""
             >
               <div className="notice-header">
-                <b>Hostel Admission Notice for Existing Boarders of MIT</b>
+                <b>Hostel Admission Notice for Existing Boarders of MIT Boys’ Hostel (Marjing)</b>
                 <button className="new-button blinking">NEW</button>
               </div>
               <div className="notice-date">Posted: August 18, 2025</div>
