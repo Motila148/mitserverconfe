@@ -10,6 +10,34 @@ export function LeftNotification() {
         </div>
         <div className="news_n_notices">
 
+          <div className="LeftNavigation_options">
+            <a
+              href="./Images/Notices/NOTICE-SIP-2025.pdf"
+              target="_blank"
+              rel=""
+            >
+              <div className="notice-header">
+                <b>Student Induction Program Schedule – MIT Freshers</b>
+                <button className="new-button blinking">NEW</button>
+              </div>
+              <div className="notice-date">Posted: August 18, 2025</div>
+            </a>
+          </div>
+
+          <div className="LeftNavigation_options">
+            <a
+              href="./Images/Notices/HOSTELADMISSION18-7-2025-OLD.pdf"
+              target="_blank"
+              rel=""
+            >
+              <div className="notice-header">
+                <b>Hostel Admission Notice for Existing Boarders of MIT</b>
+                <button className="new-button blinking">NEW</button>
+              </div>
+              <div className="notice-date">Posted: August 18, 2025</div>
+            </a>
+          </div>
+
            <div className="LeftNavigation_options">
             <a
               href="./Images/Notices/Hostel accomodation2025 .pdf"
@@ -46,7 +74,6 @@ export function LeftNotification() {
             >
               <div className="notice-header">
                 <b>Branch Change Orders – B.E. 3rd Semester (2025)</b>
-                <button className="new-button blinking">NEW</button>
               </div>
               <div className="notice-date">Posted: August 4, 2025</div>
             </a>
