@@ -9,6 +9,47 @@ export function LeftNotification() {
           <h1>News and Notices</h1>
         </div>
         <div className="news_n_notices">
+            <div className="LeftNavigation_options">
+            <a
+              href="./Images/Notices/girl-hostel-new.pdf"
+              target="_blank"
+              rel=""
+            >
+              <div className="notice-header">
+                <b>Girls’ Hostel Admission – List of Selected Students</b>
+                <button className="new-button blinking">NEW</button>
+              </div>
+              <div className="notice-date">Posted: August 22, 2025</div>
+            </a>
+          </div>
+          
+          <div className="LeftNavigation_options">
+            <a
+              href="./Images/Notices/girl-hostel-old.pdf"
+              target="_blank"
+              rel=""
+            >
+              <div className="notice-header">
+                <b>Girls’ Hostel Admission (Existing Borders)</b>
+                <button className="new-button blinking">NEW</button>
+              </div>
+              <div className="notice-date">Posted: August 22, 2025</div>
+            </a>
+          </div>
+
+          <div className="LeftNavigation_options">
+            <a
+              href="./Images/Notices/Admission-last-date-extension.pdf"
+              target="_blank"
+              rel=""
+            >
+              <div className="notice-header">
+                <b>Important: Last Date of Admission Extended till 29th August</b>
+                <button className="new-button blinking">NEW</button>
+              </div>
+              <div className="notice-date">Posted: August 22, 2025</div>
+            </a>
+          </div>
 
           <div className="LeftNavigation_options">
             <a
@@ -46,7 +87,6 @@ export function LeftNotification() {
             >
               <div className="notice-header">
                 <b>MIT Boys’ Hostel Room Allocation Notice</b>
-                <button className="new-button blinking">NEW</button>
               </div>
               <div className="notice-date">Posted: August 15, 2025</div>
             </a>
@@ -60,7 +100,6 @@ export function LeftNotification() {
             >
               <div className="notice-header">
                 <b>Walk-in Interview for the Post of Project Associate</b>
-                <button className="new-button blinking">NEW</button>
               </div>
               <div className="notice-date">Posted: August 9, 2025</div>
             </a>
@@ -259,20 +298,6 @@ export function LeftNotification() {
               <div className="notice-date">Posted: June 4, 2025</div>
             </a>
           </div>
-
-          <div className="LeftNavigation_options">
-            <a
-              href="./Images/Notices/new admission notice_BE&MTech_2025.pdf"
-              target="_blank"
-              rel=""
-            >
-              <div className="notice-header">
-                <b>New admission notice for 2025-26</b>
-              </div>
-              <div className="notice-date">Posted: May 26, 2025</div>
-            </a>
-          </div>
-
           <div className="LeftNavigation_options">
             <b>
               Admission form link: <br />
