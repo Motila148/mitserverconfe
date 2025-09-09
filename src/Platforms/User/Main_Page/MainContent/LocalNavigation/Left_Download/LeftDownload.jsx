@@ -7,6 +7,11 @@ export function LeftDownload() {
         <div className="LeftNavigation_Header">
           <h1>Downloads</h1>
         </div>
+        <div className="LeftNavigation_options">
+          <a href="./Images/Department/MU-code-of-conduct.pdf" target="_blank" rel="noopener noreferrer">
+            <b>QR Code for Manipur University Code of Conduct</b>
+          </a>
+        </div>
         
         <div className="LeftNavigation_options">
           <a href="./Images/Department/MIT_e-information brochure_2025-26.pdf" target="_blank" rel="noopener noreferrer">
