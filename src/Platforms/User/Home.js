@@ -25,7 +25,7 @@ function Home() {
           <ConferenceMarquee 
               message={
                   <>
-                      NE-ICIST 2025 Call for Papers: Submit your abstract by <s>15th August</s> 30th August!
+                      NE-ICIST 2025: Submit your Full Paper by 30th September 2025.
                   </>
               } 
               link="https://neicist2025.in/" 
