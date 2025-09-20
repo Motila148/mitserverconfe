@@ -9,7 +9,7 @@ export function LeftDownload() {
         </div>
         <div className="LeftNavigation_options">
           <a href="./Images/Department/MU-code-of-conduct.pdf" target="_blank" rel="noopener noreferrer">
-            <b>QR Code for Manipur University Code of Conduct</b>
+            QR Code for Manipur University Code of Conduct
           </a>
         </div>
         

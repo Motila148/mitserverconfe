@@ -7,8 +7,35 @@ export function LeftNotification() {
       <div className="LeftNavigation_wrapper">
         <div className="LeftNavigation_Header">
           <h1>News and Notices</h1>
-        </div>
+        </div>        
         <div className="news_n_notices">
+          <div className="LeftNavigation_options">
+            <a
+              href="./Images/Notices/New-hostel-list.pdf"
+              target="_blank"
+              rel=""
+            >
+              <div className="notice-header">
+                <b>Hostel Allotment – Second List of Selected Hostellers</b>
+                <button className="new-button blinking">NEW</button>
+              </div>
+              <div className="notice-date">Posted: September 20, 2025</div>
+            </a>
+          </div>
+
+           <div className="LeftNavigation_options">
+            <a
+              href="./Images/Notices/MUICT-2025-26.pdf"
+              target="_blank"
+              rel=""
+            >
+              <div className="notice-header">
+                <b>Manipur University Inter-College Sports Tournament Schedule 2025-26</b>
+                <button className="new-button blinking">NEW</button>
+              </div>
+              <div className="notice-date">Posted: September 20, 2025</div>
+            </a>
+          </div>
             <div className="LeftNavigation_options">
             <a
               href="./Images/Notices/girl-hostel-new.pdf"
@@ -17,7 +44,6 @@ export function LeftNotification() {
             >
               <div className="notice-header">
                 <b>Girls’ Hostel Admission – List of Selected Students</b>
-                <button className="new-button blinking">NEW</button>
               </div>
               <div className="notice-date">Posted: August 22, 2025</div>
             </a>
