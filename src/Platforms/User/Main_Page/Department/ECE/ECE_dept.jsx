@@ -69,14 +69,6 @@ function ECE_dept() {
                     </div>
                   </div>
                   <div className="Box_1">
-                  <div className="tag_align">
-                      <div className="HOD_tag">
-                        <p className="hod_tag_text">HOD</p>
-                        <div className="tag_1"></div>
-                        <div className="tag_2"></div>
-                        <div className="tag_3"></div>
-                      </div>
-                    </div>
                     <div className="Box_1_align">
                       <div className="member_img_container">
                         <img
