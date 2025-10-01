@@ -7,6 +7,10 @@ import './Image_slider.css'; // Import our custom styles
 // It's much easier to manage your slides this way.
 const slideData = [
   {
+    image: './Images/Main_page/hand-over.jpg',
+    caption: 'Handing over of Principal charge to the Prof. Th. Suresh Singh'
+  },
+  {
     image: './Images/Main_page/img_1.jpg',
     caption: 'MIT WEEK 2018 OPENING CEREMONY (12th NOV, 2018)',
   },

@@ -9,9 +9,7 @@ function EE_dept() {
     <div className="Dept_Container">
       <Navbar />
       <div className="Dept_align">
-        <div className="Dept_Tittle">
-          <h1>Department</h1>
-        </div>
+
         <div className="Dept_name">
           <h1 className="DeptName_header">
             Department of Electrical Engineering
@@ -41,7 +39,7 @@ function EE_dept() {
                       </div>
                       <div className="member_info_box">
                         <h3>Mr. Th. Sukadeba Singh</h3>
-                        <h4>Associate Professor</h4>
+                        <h4>Associate Professor & HoD</h4>
                         <a href="/">sukacm@yahoo.com </a>
                         <p>M.E. </p>
                         <p>Control System, Measurement</p>

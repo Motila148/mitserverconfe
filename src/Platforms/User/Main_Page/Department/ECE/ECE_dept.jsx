@@ -9,9 +9,6 @@ function ECE_dept() {
     <div className="Dept_Container">
       <Navbar />
       <div className="Dept_align">
-        <div className="Dept_Tittle">
-          <h1>Department</h1>
-        </div>
         <div className="Dept_name">
           <h1 className="DeptName_header">
             Department of Electronics & Communication Engineering
@@ -90,7 +87,7 @@ function ECE_dept() {
                       </div>
                       <div className="member_info_box">
                         <h3>Dr. Romesh Laishram</h3>
-                        <h4>Associate Professor & HoD in charge(EE)</h4>
+                        <h4>Associate Professor</h4>
                         <a href="/">romeshlaishram@gmail.com</a>
                         <p>Ph.D.</p>
                         <p>

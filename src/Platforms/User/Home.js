@@ -25,7 +25,7 @@ function Home() {
           <ConferenceMarquee 
               message={
                   <>
-                      NE-ICIST 2025: Submit your Full Paper by 30th September 2025.
+                      NE-ICIST 2025: Submit your Full Paper by{" "} <s>30th September 2025</s> → <strong>20th October 2025</strong>.
                   </>
               } 
               link="https://neicist2025.in/" 

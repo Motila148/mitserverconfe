@@ -14,8 +14,9 @@
 
 /* This is the individual slide's container */
 .slide-item {
-  /* Set a responsive height for the slider */
-  height: 28rem; 
+  /* --- ADJUSTED THIS VALUE --- */
+  /* Set a responsive height for the slider (increased from 30rem) */
+  height: 35rem; 
   background-color: #e0e0e0; /* Fallback color while image loads */
 }
 
@@ -111,7 +112,7 @@
 
 @media (max-width: 768px) {
   .slide-item {
-    /* Reduce height on smaller screens */
+    /* Reduce height on smaller screens (this remains unchanged) */
     height: 20rem;
   }
 

@@ -9,9 +9,6 @@ function BSC_dept() {
     <div className="Dept_Container">
       <Navbar />
       <div className="Dept_align">
-        <div className="Dept_Tittle">
-          <h1>Department</h1>
-        </div>
         <div className="Dept_name">
           <h1 className="DeptName_header">
             Department of Basic Sciences & Humanities
