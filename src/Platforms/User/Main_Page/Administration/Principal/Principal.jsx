@@ -37,7 +37,7 @@ function Principal() {
             <article className="primary-content-card">
               <h2>About the Principal</h2>
               <p>
-                <strong>Prof. Thokchom Suresh Singh</strong> completed his B.E (Civil Engineering) from NITK (formerly Karnataka Regional Engineering College, M.E (Structural Engineering) from IIT Roorkee (formerly University of Roorkee) and Ph.D from Jadavpur University Kolkata. He has 35 years of experience in teaching and research in addition to 2 years of field experience in planning, design and supervision of civil engineering structures. Prof. Thokchom has published more than 50 papers in reputed journals and conferences. His areas of interest include alkali activated materials, geopolymer applications, bacterial concrete and blended concrete materials.
+                <strong>Prof. Thokchom Suresh Singh </strong> completed his B.E (Civil Engineering) from NITK (formerly Karnataka Regional Engineering College, M.E (Structural Engineering) from IIT Roorkee  (formerly University of Roorkee) and Ph.D from Jadavpur University Kolkata. He has 35 years of experience in teaching and research in addition to 2 years of field experience in planning, design and supervision of civil engineering structures. Prof. Th Suresh Singh has published more than 50 papers in reputed journals and conferences. His areas of interest include alkali activated materials, geopolymer applications, bacterial concrete and blended concrete materials. He is a Fellow of IEI (India) and member of ACI (IC), ASCE(IS), IGS and ISCMS
               </p>
             </article>
 
