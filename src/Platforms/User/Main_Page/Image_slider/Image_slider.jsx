@@ -7,7 +7,7 @@ import './Image_slider.css'; // Import our custom styles
 // It's much easier to manage your slides this way.
 const slideData = [
   {
-    image: './Images/Main_page/hand-over.jpg',
+    image: './Images/Main_page/principal-hand-over.png',
     caption: 'Handing over of Principal charge to the Prof. Th. Suresh Singh'
   },
   {
