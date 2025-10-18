@@ -11,13 +11,39 @@ export function LeftNotification() {
         <div className="news_n_notices">
           <div className="LeftNavigation_options">
             <a
+              href="./Images/Notices/Semester-exam-2025-dec-schedule.pdf"
+              target="_blank"
+              rel=""
+            >
+              <div className="notice-header">
+                <b>End Semester Examination Schedule – December 2025</b>
+                <button className="new-button blinking">NEW</button>
+              </div>
+              <div className="notice-date">Posted: October 18, 2025</div>
+            </a>
+          </div>
+
+          <div className="LeftNavigation_options">
+            <a
+              href="./Images/Notices/pre-phd-visvesvaraya-scheme.pdf"
+              target="_blank"
+              rel=""
+            >
+              <div className="notice-header">
+                <b>Provisional Selection List for Admission to Pre-Ph.D. Programme (Visvesvaraya Ph.D. Scheme)</b>
+                <button className="new-button blinking">NEW</button>
+              </div>
+              <div className="notice-date">Posted: October 18, 2025</div>
+            </a>
+          </div>
+          <div className="LeftNavigation_options">
+            <a
               href="./Images/Notices/New-hostel-list.pdf"
               target="_blank"
               rel=""
             >
               <div className="notice-header">
                 <b>Hostel Allotment – Second List of Selected Hostellers</b>
-                <button className="new-button blinking">NEW</button>
               </div>
               <div className="notice-date">Posted: September 20, 2025</div>
             </a>
@@ -31,7 +57,6 @@ export function LeftNotification() {
             >
               <div className="notice-header">
                 <b>Manipur University Inter-College Sports Tournament Schedule 2025-26</b>
-                <button className="new-button blinking">NEW</button>
               </div>
               <div className="notice-date">Posted: September 20, 2025</div>
             </a>
@@ -57,7 +82,6 @@ export function LeftNotification() {
             >
               <div className="notice-header">
                 <b>Girls’ Hostel Admission (Existing Borders)</b>
-                <button className="new-button blinking">NEW</button>
               </div>
               <div className="notice-date">Posted: August 22, 2025</div>
             </a>
@@ -71,7 +95,6 @@ export function LeftNotification() {
             >
               <div className="notice-header">
                 <b>Important: Last Date of Admission Extended till 29th August</b>
-                <button className="new-button blinking">NEW</button>
               </div>
               <div className="notice-date">Posted: August 22, 2025</div>
             </a>
@@ -85,7 +108,6 @@ export function LeftNotification() {
             >
               <div className="notice-header">
                 <b>Student Induction Program Schedule – MIT Freshers</b>
-                <button className="new-button blinking">NEW</button>
               </div>
               <div className="notice-date">Posted: August 18, 2025</div>
             </a>
@@ -99,7 +121,6 @@ export function LeftNotification() {
             >
               <div className="notice-header">
                 <b>Hostel Admission Notice for Existing Boarders of MIT Boys’ Hostel (Marjing)</b>
-                <button className="new-button blinking">NEW</button>
               </div>
               <div className="notice-date">Posted: August 18, 2025</div>
             </a>
