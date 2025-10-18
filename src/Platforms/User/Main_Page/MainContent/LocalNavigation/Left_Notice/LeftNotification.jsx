@@ -1,5 +1,178 @@
+import React from 'react';
 import "../LocalNavigation.css";
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+
+// Notice data array - Add new notices at the TOP of this array
+const noticesData = [
+  {
+    title: "End Semester Examination Schedule – December 2025",
+    pdfPath: "./Images/Notices/Semester-exam-2025-dec-schedule.pdf",
+    date: "October 18, 2025",
+    isNew: true
+  },
+  {
+    title: "Provisional Selection List for Admission to Pre-Ph.D. Programme (Visvesvaraya Ph.D. Scheme)",
+    pdfPath: "./Images/Notices/pre-phd-visvesvaraya-scheme.pdf",
+    date: "October 18, 2025",
+    isNew: true
+  },
+  {
+    title: "Hostel Allotment – Second List of Selected Hostellers",
+    pdfPath: "./Images/Notices/New-hostel-list.pdf",
+    date: "September 20, 2025",
+    isNew: false
+  },
+  {
+    title: "Manipur University Inter-College Sports Tournament Schedule 2025-26",
+    pdfPath: "./Images/Notices/MUICT-2025-26.pdf",
+    date: "September 20, 2025",
+    isNew: false
+  },
+  {
+    title: "Girls' Hostel Admission – List of Selected Students",
+    pdfPath: "./Images/Notices/girl-hostel-new.pdf",
+    date: "August 22, 2025",
+    isNew: false
+  },
+  {
+    title: "Girls' Hostel Admission (Existing Borders)",
+    pdfPath: "./Images/Notices/girl-hostel-old.pdf",
+    date: "August 22, 2025",
+    isNew: false
+  },
+  {
+    title: "Important: Last Date of Admission Extended till 29th August",
+    pdfPath: "./Images/Notices/Admission-last-date-extension.pdf",
+    date: "August 22, 2025",
+    isNew: false
+  },
+  {
+    title: "Student Induction Program Schedule – MIT Freshers",
+    pdfPath: "./Images/Notices/NOTICE-SIP-2025.pdf",
+    date: "August 18, 2025",
+    isNew: false
+  },
+  {
+    title: "Hostel Admission Notice for Existing Boarders of MIT Boys' Hostel (Marjing)",
+    pdfPath: "./Images/Notices/HOSTELADMISSION18-7-2025-OLD.pdf",
+    date: "August 18, 2025",
+    isNew: false
+  },
+  {
+    title: "MIT Boys' Hostel Room Allocation Notice",
+    pdfPath: "./Images/Notices/Hostel accomodation2025 .pdf",
+    date: "August 15, 2025",
+    isNew: false
+  },
+  {
+    title: "Walk-in Interview for the Post of Project Associate",
+    pdfPath: "./Images/Notices/Notice for walk in Interview.pdf",
+    date: "August 9, 2025",
+    isNew: false
+  },
+  {
+    title: "Branch Change Orders – B.E. 3rd Semester (2025)",
+    pdfPath: "./Images/Notices/Branch_change.pdf",
+    date: "August 4, 2025",
+    isNew: false
+  },
+  {
+    title: "List of Candidates Recommended for Admission Against Vacant Seats",
+    pdfPath: "./Images/Notices/Admission Notice_Against Vacant_1-8-2025.pdf",
+    date: "August 1, 2025",
+    isNew: false
+  },
+  {
+    title: "Online Application for Vacant B.E(Lateral Entry) Seats – 2025-26",
+    pdfPath: "./Images/Notices/Notice_SpotBE_LE vacant_24-7-25.pdf",
+    date: "July 24, 2025",
+    isNew: false
+  },
+  {
+    title: "Reallocation Notice – Admitted Students in B.E. Programs",
+    pdfPath: "./Images/Notices/Reallocation notice_BE programme_24-7-25.pdf",
+    date: "July 24, 2025",
+    isNew: false
+  },
+  {
+    title: "Admission Notice – Provisionally recommended candidates for M.Tech & B.E",
+    pdfPath: "./Images/Notices/Admission Notice_MTech.BE2025_2026.pdf",
+    date: "July 24, 2025",
+    isNew: false
+  },
+  {
+    title: "Online Application for Vacant Seats B.E & M.Tech – Academic Session 2025–26",
+    pdfPath: "./Images/Notices/Notice_Spot_BE_MTECH vacant_23_7_25.pdf",
+    date: "July 23, 2025",
+    isNew: false
+  },
+  {
+    title: "Counselling Schedule for Admission to B.E. & M.Tech. Programmes – Session 2025–2026",
+    pdfPath: "./Images/Notices/notice_counselling_23.7.25.pdf",
+    date: "July 17, 2025",
+    isNew: false
+  },
+  {
+    title: "Admission Notice – Provisionally Selected First-Year B.E. Students (Non-JEE)",
+    pdfPath: "./Images/Notices/admission notice_BE_WL_8-7-25.pdf",
+    date: "July 8, 2025",
+    isNew: false
+  },
+  {
+    title: "Reallocation Notice – B.E. First Semester (Non-JEE Category), MIT Imphal",
+    pdfPath: "/Images/Notices/Reallocation notice_NON_JEE_8-7-25.pdf",
+    date: "July 8, 2025",
+    isNew: false
+  },
+  {
+    title: "Admission Notice (Non-JEE) – Candidate List for B.E.",
+    pdfPath: "./Images/Notices/Admission Notice_BE_Non-JEE Category_30-6-2025.pdf",
+    date: "June 30, 2025",
+    isNew: false
+  },
+  {
+    title: "Branch Reallocation Notice for JEE Category Candidates - B.E. Session 2025-2026",
+    pdfPath: "./Images/Notices/Notice_Reallotment_JEE_annexure_24-6-25.pdf",
+    date: "June 24, 2025",
+    isNew: false
+  },
+  {
+    title: "EXTENDED ADMISSION NOTICE",
+    pdfPath: "./Images/Notices/notice extended_11-6-25.pdf",
+    date: "June 11, 2025",
+    isNew: false
+  },
+  {
+    title: "Press Release Notice for Admission Schedule Postponed for B.E. & M.Tech. Programmes (2025-2026)",
+    pdfPath: "./Images/Notices/press release_9-6-25.pdf",
+    date: "June 9, 2025",
+    isNew: false
+  },
+  {
+    title: "BE recommended candidates(JEE Qualified)",
+    pdfPath: "./Images/Notices/admission notice with annexure-I_BE_JEE_6-6-25.pdf",
+    date: "June 6, 2025",
+    isNew: false
+  },
+  {
+    title: "Extended admission notice for 2025-26",
+    pdfPath: "./Images/Notices/notice extended_4-6-25.pdf",
+    date: "June 4, 2025",
+    isNew: false
+  }
+];
+
+// Notice Item Component
+const NoticeItem = ({ number, title, pdfPath, date, isNew }) => (
+  <div className="LeftNavigation_options">
+    <a href={pdfPath} target="_blank" rel="">
+      <div className="notice-header">
+        <b>{number}. {title}</b>
+        {isNew && <button className="new-button blinking">NEW</button>}
+      </div>
+      <div className="notice-date">Posted: {date}</div>
+    </a>
+  </div>
+);
 
 export function LeftNotification() {
   return (
@@ -7,350 +180,27 @@ export function LeftNotification() {
       <div className="LeftNavigation_wrapper">
         <div className="LeftNavigation_Header">
           <h1>News and Notices</h1>
-        </div>        
+        </div>
         <div className="news_n_notices">
-          <div className="LeftNavigation_options">
-            <a
-              href="./Images/Notices/Semester-exam-2025-dec-schedule.pdf"
-              target="_blank"
-              rel=""
-            >
-              <div className="notice-header">
-                <b>End Semester Examination Schedule – December 2025</b>
-                <button className="new-button blinking">NEW</button>
-              </div>
-              <div className="notice-date">Posted: October 18, 2025</div>
-            </a>
-          </div>
+          {/* Render all notices from data */}
+          {noticesData.map((notice, index) => (
+            <NoticeItem
+              key={index}
+              number={index + 1}
+              title={notice.title}
+              pdfPath={notice.pdfPath}
+              date={notice.date}
+              isNew={notice.isNew}
+            />
+          ))}
 
-          <div className="LeftNavigation_options">
-            <a
-              href="./Images/Notices/pre-phd-visvesvaraya-scheme.pdf"
-              target="_blank"
-              rel=""
-            >
-              <div className="notice-header">
-                <b>Provisional Selection List for Admission to Pre-Ph.D. Programme (Visvesvaraya Ph.D. Scheme)</b>
-                <button className="new-button blinking">NEW</button>
-              </div>
-              <div className="notice-date">Posted: October 18, 2025</div>
-            </a>
-          </div>
-          <div className="LeftNavigation_options">
-            <a
-              href="./Images/Notices/New-hostel-list.pdf"
-              target="_blank"
-              rel=""
-            >
-              <div className="notice-header">
-                <b>Hostel Allotment – Second List of Selected Hostellers</b>
-              </div>
-              <div className="notice-date">Posted: September 20, 2025</div>
-            </a>
-          </div>
-
-           <div className="LeftNavigation_options">
-            <a
-              href="./Images/Notices/MUICT-2025-26.pdf"
-              target="_blank"
-              rel=""
-            >
-              <div className="notice-header">
-                <b>Manipur University Inter-College Sports Tournament Schedule 2025-26</b>
-              </div>
-              <div className="notice-date">Posted: September 20, 2025</div>
-            </a>
-          </div>
-            <div className="LeftNavigation_options">
-            <a
-              href="./Images/Notices/girl-hostel-new.pdf"
-              target="_blank"
-              rel=""
-            >
-              <div className="notice-header">
-                <b>Girls’ Hostel Admission – List of Selected Students</b>
-              </div>
-              <div className="notice-date">Posted: August 22, 2025</div>
-            </a>
-          </div>
-          
-          <div className="LeftNavigation_options">
-            <a
-              href="./Images/Notices/girl-hostel-old.pdf"
-              target="_blank"
-              rel=""
-            >
-              <div className="notice-header">
-                <b>Girls’ Hostel Admission (Existing Borders)</b>
-              </div>
-              <div className="notice-date">Posted: August 22, 2025</div>
-            </a>
-          </div>
-
-          <div className="LeftNavigation_options">
-            <a
-              href="./Images/Notices/Admission-last-date-extension.pdf"
-              target="_blank"
-              rel=""
-            >
-              <div className="notice-header">
-                <b>Important: Last Date of Admission Extended till 29th August</b>
-              </div>
-              <div className="notice-date">Posted: August 22, 2025</div>
-            </a>
-          </div>
-
-          <div className="LeftNavigation_options">
-            <a
-              href="./Images/Notices/NOTICE-SIP-2025.pdf"
-              target="_blank"
-              rel=""
-            >
-              <div className="notice-header">
-                <b>Student Induction Program Schedule – MIT Freshers</b>
-              </div>
-              <div className="notice-date">Posted: August 18, 2025</div>
-            </a>
-          </div>
-
-          <div className="LeftNavigation_options">
-            <a
-              href="./Images/Notices/HOSTELADMISSION18-7-2025-OLD.pdf"
-              target="_blank"
-              rel=""
-            >
-              <div className="notice-header">
-                <b>Hostel Admission Notice for Existing Boarders of MIT Boys’ Hostel (Marjing)</b>
-              </div>
-              <div className="notice-date">Posted: August 18, 2025</div>
-            </a>
-          </div>
-
-           <div className="LeftNavigation_options">
-            <a
-              href="./Images/Notices/Hostel accomodation2025 .pdf"
-              target="_blank"
-              rel=""
-            >
-              <div className="notice-header">
-                <b>MIT Boys’ Hostel Room Allocation Notice</b>
-              </div>
-              <div className="notice-date">Posted: August 15, 2025</div>
-            </a>
-          </div>
-
-          <div className="LeftNavigation_options">
-            <a
-              href="./Images/Notices/Notice for walk in Interview.pdf"
-              target="_blank"
-              rel=""
-            >
-              <div className="notice-header">
-                <b>Walk-in Interview for the Post of Project Associate</b>
-              </div>
-              <div className="notice-date">Posted: August 9, 2025</div>
-            </a>
-          </div>
-
-          <div className="LeftNavigation_options">
-            <a
-              href="./Images/Notices/Branch_change.pdf"
-              target="_blank"
-              rel=""
-            >
-              <div className="notice-header">
-                <b>Branch Change Orders – B.E. 3rd Semester (2025)</b>
-              </div>
-              <div className="notice-date">Posted: August 4, 2025</div>
-            </a>
-          </div>
-          <div className="LeftNavigation_options">
-            <a
-              href="./Images/Notices/Admission Notice_Against Vacant_1-8-2025.pdf"
-              target="_blank"
-              rel=""
-            >
-              <div className="notice-header">
-                <b>List of Candidates Recommended for Admission Against Vacant Seats</b>
-              </div>
-              <div className="notice-date">Posted: August 1, 2025</div>
-            </a>
-          </div>
-
-          <div className="LeftNavigation_options">
-            <a
-              href="./Images/Notices/Notice_SpotBE_LE vacant_24-7-25.pdf"
-              target="_blank"
-              rel=""
-            >
-              <div className="notice-header">
-                <b>Online Application for Vacant B.E(Lateral Entry) Seats – 2025-26</b>
-              </div>
-              <div className="notice-date">Posted: July 24, 2025</div>
-            </a>
-          </div>
-
-          <div className="LeftNavigation_options">
-            <a
-              href="./Images/Notices/Reallocation notice_BE programme_24-7-25.pdf"
-              target="_blank"
-              rel=""
-            >
-              <div className="notice-header">
-                <b>Reallocation Notice – Admitted Students in B.E. Programs</b>
-              </div>
-              <div className="notice-date">Posted: July 24, 2025</div>
-            </a>
-          </div>
-
-          <div className="LeftNavigation_options">
-            <a
-              href="./Images/Notices/Admission Notice_MTech.BE2025_2026.pdf"
-              target="_blank"
-              rel=""
-            >
-              <div className="notice-header">
-                <b>Admission Notice – Provisionally recommended candidates for M.Tech & B.E</b>
-              </div>
-              <div className="notice-date">Posted: July 24, 2025</div>
-            </a>
-          </div>
-
-          <div className="LeftNavigation_options">
-            <a
-              href="./Images/Notices/Notice_Spot_BE_MTECH vacant_23_7_25.pdf"
-              target="_blank"
-              rel=""
-            >
-              <div className="notice-header">
-                <b>Online Application for Vacant Seats B.E & M.Tech – Academic Session 2025–26</b>
-              </div>
-              <div className="notice-date">Posted: July 23, 2025</div>
-            </a>
-          </div>
-
-          <div className="LeftNavigation_options">
-            <a
-              href="./Images/Notices/notice_counselling_23.7.25.pdf"
-              target="_blank"
-              rel=""
-            >
-              <div className="notice-header">
-                <b>Counselling Schedule for Admission to B.E. & M.Tech. Programmes – Session 2025–2026</b>
-              </div>
-              <div className="notice-date">Posted: July 17, 2025</div>
-            </a>
-          </div>
-
-           <div className="LeftNavigation_options">
-            <a
-              href=".\Images\Notices\admission notice_BE_WL_8-7-25.pdf"
-              target="_blank"
-              rel=""
-            >
-              <div className="notice-header">
-                <b>Admission Notice – Provisionally Selected First-Year B.E. Students (Non-JEE)</b>
-              </div>
-              <div className="notice-date">Posted: July 8, 2025</div>
-            </a>
-          </div>
-
-          <div className="LeftNavigation_options">
-            <a
-              href="\Images\Notices\Reallocation notice_NON_JEE_8-7-25.pdf"
-              target="_blank"
-              rel=""
-            >
-              <div className="notice-header">
-                <b>Reallocation Notice – B.E. First Semester (Non-JEE Category), MIT Imphal</b>
-              </div>
-              <div className="notice-date">Posted: July 8, 2025</div>
-            </a>
-          </div>
-
-          <div className="LeftNavigation_options">
-            <a
-              href="./Images/Notices/Admission Notice_BE_Non-JEE Category_30-6-2025.pdf"
-              target="_blank"
-              rel=""
-            >
-              <div className="notice-header">
-                <b>Admission Notice (Non-JEE) – Candidate List for B.E.</b>
-              </div>
-              <div className="notice-date">Posted: June 30, 2025</div>
-            </a>
-          </div>
-
-          <div className="LeftNavigation_options">
-            <a
-              href="./Images/Notices/Notice_Reallotment_JEE_annexure_24-6-25.pdf"
-              target="_blank"
-              rel=""
-            >
-              <div className="notice-header">
-                <b>Branch Reallocation Notice for JEE Category Candidates - B.E. Session 2025-2026</b>
-              </div>
-              <div className="notice-date">Posted: June 24, 2025</div>
-            </a>
-          </div>
-
-          <div className="LeftNavigation_options">
-            <a
-              href="./Images/Notices/notice extended_11-6-25.pdf"
-              target="_blank"
-              rel=""
-            >
-              <div className="notice-header">
-                <b>EXTENDED ADMISSION NOTICE</b>
-              </div>
-              <div className="notice-date">Posted: June 11, 2025</div>
-            </a>
-          </div>
-
-          <div className="LeftNavigation_options">
-            <a
-              href="./Images/Notices/press release_9-6-25.pdf"
-              target="_blank"
-              rel=""
-            >
-              <div className="notice-header">
-                <b>Press Release Notice for Admission Schedule Postponed for B.E. & M.Tech. Programmes (2025-2026)</b>
-              </div>
-              <div className="notice-date">Posted: June 9, 2025</div>
-            </a>
-          </div>
-
-          <div className="LeftNavigation_options">
-            <a
-              href="./Images/Notices/admission notice with annexure-I_BE_JEE_6-6-25.pdf"
-              target="_blank"
-              rel=""
-            >
-              <div className="notice-header">
-                <b>BE recommended candidates(JEE Qualified)</b>
-              </div>
-              <div className="notice-date">Posted: June 6, 2025</div>
-            </a>
-          </div>
-
-          <div className="LeftNavigation_options">
-            <a
-              href="./Images/Notices/notice extended_4-6-25.pdf"
-              target="_blank"
-              rel=""
-            >
-              <div className="notice-header">
-                <b>Extended admission notice for 2025-26</b>
-              </div>
-              <div className="notice-date">Posted: June 4, 2025</div>
-            </a>
-          </div>
+          {/* Admission form link */}
           <div className="LeftNavigation_options">
             <b>
               Admission form link: <br />
               <a
                 href="https://manipurunivadm.samarth.edu.in/"
-                style={{ color:"#4169E1" }}
+                style={{ color: "#4169E1" }}
                 target="_blank"
                 rel=""
               >
