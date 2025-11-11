@@ -3,17 +3,29 @@ import "../LocalNavigation.css";
 
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
+   {
+    title: "Rescheduled Practical Exams – Dec 2025",
+    pdfPath: "./Images/Notices/rescheduled-practical-dec2025.pdf",
+    date: "November 11, 2025",
+    isNew: true
+  },
+  {
+    title: "End Sem Form Fill-up Extension – Dec 2025",
+    pdfPath: "./Images/Notices/Form-fill-up-extension-dec2025.pdf",
+    date: "November 11, 2025",
+    isNew: true
+  },
   {
     title: "End Semester Examination Schedule – December 2025",
     pdfPath: "./Images/Notices/Semester-exam-2025-dec-schedule.pdf",
     date: "October 18, 2025",
-    isNew: true
+    isNew: false
   },
   {
     title: "Provisional Selection List for Admission to Pre-Ph.D. Programme (Visvesvaraya Ph.D. Scheme)",
     pdfPath: "./Images/Notices/pre-phd-visvesvaraya-scheme.pdf",
     date: "October 18, 2025",
-    isNew: true
+    isNew: false
   },
   {
     title: "Hostel Allotment – Second List of Selected Hostellers",
