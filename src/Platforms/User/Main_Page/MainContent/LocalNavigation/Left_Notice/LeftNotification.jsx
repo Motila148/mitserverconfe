@@ -4,7 +4,7 @@ import "../LocalNavigation.css";
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
    {
-    title: "Rescheduled Practical Exams – Dec 2025",
+    title: "Rescheduled Practical Programme – Dec 2025",
     pdfPath: "./Images/Notices/rescheduled-practical-dec2025.pdf",
     date: "November 11, 2025",
     isNew: true
