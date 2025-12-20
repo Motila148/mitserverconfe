@@ -3,17 +3,29 @@ import "../LocalNavigation.css";
 
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
+    {
+    title: "Provisional List of Eligible Candidates for Ph.D. QET / Direct Interview",
+    pdfPath: "./Images/Notices/notice-Ph.D.QET2025.pdf",
+    date: "December 20, 2025",
+    isNew: true
+  },
+  {
+    title: "Commencement of Regular Classes for Even Semester (January 2026)",
+    pdfPath: "./Images/Notices/notice-classstart-even-semester2026 .pdf",
+    date: "December 20, 2025",
+    isNew: true
+  },
    {
     title: "Rescheduled Practical Programme – Dec 2025",
     pdfPath: "./Images/Notices/rescheduled-practical-dec2025.pdf",
     date: "November 11, 2025",
-    isNew: true
+    isNew: false
   },
   {
     title: "End Sem Form Fill-up Extension – Dec 2025",
     pdfPath: "./Images/Notices/Form-fill-up-extension-dec2025.pdf",
     date: "November 11, 2025",
-    isNew: true
+    isNew: false
   },
   {
     title: "End Semester Examination Schedule – December 2025",
