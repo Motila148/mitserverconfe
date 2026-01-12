@@ -4,16 +4,22 @@ import "../LocalNavigation.css";
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
     {
+    title: "Notice: Pre-Ph.D. Engineering Personal Interview Schedule (2025–26)",
+    pdfPath: "./Images/Notices/MIT-phd-result-2026.pdf",
+    date: "January 12, 2026",
+    isNew: true
+    },
+    {
     title: "Provisional List of Eligible Candidates for Ph.D. QET / Direct Interview",
     pdfPath: "./Images/Notices/notice-Ph.D.QET2025.pdf",
     date: "December 20, 2025",
-    isNew: true
+    isNew: false
   },
   {
     title: "Commencement of Regular Classes for Even Semester (January 2026)",
     pdfPath: "./Images/Notices/notice-classstart-even-semester2026 .pdf",
     date: "December 20, 2025",
-    isNew: true
+    isNew: false
   },
    {
     title: "Rescheduled Practical Programme – Dec 2025",

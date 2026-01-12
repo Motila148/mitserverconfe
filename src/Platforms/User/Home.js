@@ -22,7 +22,7 @@ function Home() {
         <div className="HomePage_wrapper">
           <Image_slider />
           
-          <ConferenceMarquee 
+          {/* <ConferenceMarquee 
               message={
                   <>
                       NE-ICIST 2025: Submit your Full Paper by{" "} <s>30th September 2025</s> → <strong>20th October 2025</strong>.
@@ -30,7 +30,7 @@ function Home() {
               } 
               link="https://neicist2025.in/" 
               linkText="Click here to visit the website." 
-          />
+          />*/}
 
           <div className="HomePage_top_link">
             <a
