@@ -4,10 +4,16 @@ import "../LocalNavigation.css";
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
     {
+    title: "Ph.D. Admission Result – January 2026",
+    pdfPath: "./Images/Notices/phd-result-jan2026.pdf",
+    date: "January 27, 2026",
+    isNew: true
+    },
+    {
     title: "Notice: Pre-Ph.D. Engineering Personal Interview Schedule (2025–26)",
     pdfPath: "./Images/Notices/MIT-phd-result-2026.pdf",
     date: "January 12, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "Provisional List of Eligible Candidates for Ph.D. QET / Direct Interview",
