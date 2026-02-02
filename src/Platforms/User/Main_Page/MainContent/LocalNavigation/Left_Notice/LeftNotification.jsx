@@ -4,6 +4,12 @@ import "../LocalNavigation.css";
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
     {
+    title: "Notice Regarding Payment of Admission Fee for Even Semester Courses 2026",
+    pdfPath: "./Images/Notices/admissionjan2026.pdf",
+    date: "February 1, 2026",
+    isNew: true
+    },
+    {
     title: "Ph.D. Admission Result – January 2026",
     pdfPath: "./Images/Notices/phd-result-jan2026.pdf",
     date: "January 27, 2026",
