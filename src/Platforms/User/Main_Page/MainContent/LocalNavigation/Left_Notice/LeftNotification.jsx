@@ -4,10 +4,22 @@ import "../LocalNavigation.css";
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
     {
+    title: "Extension of Admission Last Date",
+    pdfPath: "./Images/Notices/admission-extensionJan2026.pdf",
+    date: "March 10, 2026",
+    isNew: true
+    },
+    {
+    title: "Notice for Payment of MIT Boys’ Hostel Admission Fee (2026)",
+    pdfPath: "./Images/Notices/Hostel-accomodation090326.pdf",
+    date: "March 10, 2026",
+    isNew: true
+    },
+    {
     title: "Re-Admission Notification for Eligible B.E. Students",
     pdfPath: "./Images/Notices/Readmission2026.pdf",
     date: "February 27, 2026",
-    isNew: true
+    isNew: false
     },
 
     {
