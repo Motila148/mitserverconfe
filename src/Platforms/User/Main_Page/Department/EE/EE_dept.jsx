@@ -46,10 +46,10 @@ function EE_dept() {
                         />
                       </div>
                       <div className="member_info_box">
-                        <h3>Mr. Th. Sukadeba Singh</h3>
+                        <h3>Dr. Th. Sukadeba Singh</h3>
                         <h4>Associate Professor & HoD</h4>
                         <a href="/">sukacm@yahoo.com </a>
-                        <p>M.E. </p>
+                        <p>Ph.D </p>
                         <p>Control System, Measurement</p>
                       </div>
                     </div>
