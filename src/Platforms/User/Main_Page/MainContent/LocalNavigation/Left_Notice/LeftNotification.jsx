@@ -6,7 +6,7 @@ const noticesData = [
     {
     title: "Notification Regarding Preponement of B.E./M.Tech Semester Examination",
     pdfPath: "./Images/Notices/Exam-preponed-notice.pdf",
-    date: "April 10, 2026",
+    date: "May 25, 2026",
     isNew: true
     },
     {
