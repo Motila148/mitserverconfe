@@ -13,7 +13,7 @@ const noticesData = [
     title: "Programme for 2nd Internal Assessment Test",
     pdfPath: "./Images/Notices/2nd_int_asses_2026.pdf",
     date: "April 10, 2026",
-    isNew: false
+    isNew: true
     },
     {
     title: "Extension of Admission Last Date",
