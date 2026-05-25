@@ -4,10 +4,16 @@ import "../LocalNavigation.css";
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
     {
+    title: "Notification Regarding Preponement of B.E./M.Tech Semester Examination",
+    pdfPath: "./Images/Notices/Exam-preponed-notice.pdf",
+    date: "April 10, 2026",
+    isNew: true
+    },
+    {
     title: "Programme for 2nd Internal Assessment Test",
     pdfPath: "./Images/Notices/2nd_int_asses_2026.pdf",
     date: "April 10, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "Extension of Admission Last Date",
