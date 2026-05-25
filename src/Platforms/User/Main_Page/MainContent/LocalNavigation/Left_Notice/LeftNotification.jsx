@@ -5,7 +5,7 @@ import "../LocalNavigation.css";
 const noticesData = [
     {
     title: "Admission Notice for Academic Session 2026–27",
-    pdfPath: "./Images/Notices/admission-notice-2026-27.pdf",
+    pdfPath: "./Images/Notices/admission-notice-2026-27-v2.pdf",
     date: "May 25, 2026",
     isNew: true
     },
