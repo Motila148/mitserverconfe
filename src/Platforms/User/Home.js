@@ -22,15 +22,15 @@ function Home() {
         <div className="HomePage_wrapper">
           <Image_slider />
           
-          {/* <ConferenceMarquee 
+          <ConferenceMarquee 
               message={
                   <>
-                      NE-ICIST 2025: Submit your Full Paper by{" "} <s>30th September 2025</s> → <strong>20th October 2025</strong>.
+                      Admissions are open for B.Tech/M.Tech 2026-2027.
                   </>
               } 
-              link="https://neicist2025.in/" 
-              linkText="Click here to visit the website." 
-          />*/}
+              link="https://manipurunivadm.samarth.edu.in/2026/" 
+              linkText="Apply Now" 
+          />
 
           <div className="HomePage_top_link">
             <a

@@ -4,15 +4,11 @@
 
 /* The main container for the announcement bar */
 .conference-marquee-container {
-  /* COLOR UPDATE: Switched to a strong red for an urgent alert style */
-  background-color: #ae0d0d; /* A deep, urgent red */
-  color: #ffffff; /* White text for contrast */
-  padding: 12px 0;
-  /* Hides the text when it scrolls outside the container's bounds */
+  background-color: #ae0d0d;
+  color: #ffffff;
+  padding: 6px 0; /* was 12px — halved for a slimmer bar */
   overflow: hidden;
-  /* Prevents the text inside from wrapping to a new line */
   white-space: nowrap;
-  /* Ensures it stays at the top */
   position: sticky;
   top: 0;
   z-index: 999;

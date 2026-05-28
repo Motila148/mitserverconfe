@@ -279,6 +279,29 @@ function CE_dept() {
                         </div>
                       </div>
                     </div>
+
+                    <div className="Box_1">
+                      <div className="Box_1_align">
+                        <div className="member_img_container">
+                          <img
+                            className="member_img"
+                            src="./Images/Department/CE/Members/img_13.jpeg"
+                            alt=""
+                          />
+                        </div>
+                        <div className="member_info_box">
+                          <h3>Dr. Kirpa Hirom</h3>
+                          <h4>Assistant Professor </h4>
+                          <a href="/">kirpa.hirom.mit@manipuruniv.ac.in </a>
+                          <a href="/">kirpah@gmail.com</a>
+                          <p>Ph.D.</p>
+                          <p>
+                            Water Resources Engg.: CFD modelling, Environmental Hydraulics, Water Treatment.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
                     <div className="Box_1">
                       <div className="Box_1_align">
                         <div className="member_img_container">
@@ -335,6 +358,7 @@ function CE_dept() {
                         </div>
                       </div>
                     </div>
+
                   </div>
                 </div>
             </div>
