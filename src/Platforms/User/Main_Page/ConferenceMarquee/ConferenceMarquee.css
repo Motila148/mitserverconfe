@@ -9,9 +9,6 @@
   padding: 6px 0; /* was 12px — halved for a slimmer bar */
   overflow: hidden;
   white-space: nowrap;
-  position: sticky;
-  top: 0;
-  z-index: 999;
 }
 
 /* This wrapper holds the scrolling text */
