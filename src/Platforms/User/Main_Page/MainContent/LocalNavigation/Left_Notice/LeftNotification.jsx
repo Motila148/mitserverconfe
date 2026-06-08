@@ -4,22 +4,28 @@ import "../LocalNavigation.css";
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
     {
+    title: "Admission Notice for First Year B.Tech Programme (JEE Category) 2026–27",
+    pdfPath: "./Images/Notices/MIT_BTECH_JEE_2026.pdf",
+    date: "June 8, 2026",
+    isNew: true
+    },
+    {
     title: "Admission Notice for Academic Session 2026–27",
     pdfPath: "./Images/Notices/admission-notice-2026-27-v2.pdf",
     date: "May 25, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "Information Brochure for Academic Session 2026–27",
     pdfPath: "./Images/Notices/INFORMATION-BROCHURE-2026-27.pdf",
     date: "May 25, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "Notification Regarding Preponement of B.E./M.Tech Semester Examination",
     pdfPath: "./Images/Notices/Exam-preponed-notice.pdf",
     date: "May 25, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "Programme for 2nd Internal Assessment Test",
