@@ -4,6 +4,12 @@ import "../LocalNavigation.css";
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
     {
+    title: "Entrance Syllabus (2026–27): B.Tech (Non-JEE), Lateral Entry & M.Tech",
+    pdfPath: "./Images/Notices/MIT-ENTRANCE-TEST-SYLLABUS2026.pdf",
+    date: "June 11, 2026",
+    isNew: true
+    },
+    {
     title: "Admission Notice for First Year B.Tech Programme (JEE Category) 2026–27",
     pdfPath: "./Images/Notices/MIT_BTECH_JEE_2026.pdf",
     date: "June 8, 2026",
