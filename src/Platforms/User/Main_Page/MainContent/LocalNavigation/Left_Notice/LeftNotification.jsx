@@ -4,6 +4,12 @@ import "../LocalNavigation.css";
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
     {
+    title: "Revised Admission Schedule for B.Tech and M.Tech Programmes (Academic Session 2026–2027)",
+    pdfPath: "./Images/Notices/MIT-extended-notice-2026-27.pdf",
+    date: "June 16, 2026",
+    isNew: true
+    },
+    {
     title: "Entrance Syllabus (2026–27): B.Tech (Non-JEE), Lateral Entry & M.Tech",
     pdfPath: "./Images/Notices/MIT-ENTRANCE-TEST-SYLLABUS2026.pdf",
     date: "June 11, 2026",
