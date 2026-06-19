@@ -4,9 +4,21 @@ import "../LocalNavigation.css";
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
     {
+    title: "M.Tech Admission 2026–27: Provisional Selection of GATE Qualified Candidates",
+    pdfPath: "./Images/Notices/MTECH_GATE_NOTICE_19_06_2026.pdf",
+    date: "June 19, 2026",
+    isNew: true
+    },
+    {
+    title: "B.Tech Admission 2026–27: Ineligible Candidates and JEE Below Cut-off List",
+    pdfPath: "./Images/Notices/In-eligible & Below Cut-off mark_JEE_notice.pdf",
+    date: "June 19, 2026",
+    isNew: true
+    },
+    {
     title: "Revised Admission Schedule for B.Tech and M.Tech Programmes (Academic Session 2026–2027)",
     pdfPath: "./Images/Notices/MIT-extended-notice-2026-27.pdf",
-    date: "June 16, 2026",
+    date: "June 19, 2026",
     isNew: true
     },
     {
