@@ -31,13 +31,13 @@ const noticesData = [
     title: "Entrance Syllabus (2026–27): B.Tech (Non-JEE), Lateral Entry & M.Tech",
     pdfPath: "./Images/Notices/MIT-ENTRANCE-TEST-SYLLABUS2026.pdf",
     date: "June 11, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "Admission Notice for First Year B.Tech Programme (JEE Category) 2026–27",
     pdfPath: "./Images/Notices/MIT_BTECH_JEE_2026.pdf",
     date: "June 8, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "Admission Notice for Academic Session 2026–27",
