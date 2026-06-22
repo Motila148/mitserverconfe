@@ -4,6 +4,12 @@ import "../LocalNavigation.css";
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
     {
+    title: "Re-allocation of Branches for Admitted B.Tech Students – JEE Category, 2026–27",
+    pdfPath: "./Images/Notices/Re-Allot.Notice_BTECH_JEE_22-6-2026.pdf",
+    date: "June 22, 2026",
+    isNew: true
+    },
+    {
     title: "M.Tech Admission 2026–27: Provisional Selection of GATE Qualified Candidates",
     pdfPath: "./Images/Notices/MTECH_GATE_NOTICE_19_06_2026.pdf",
     date: "June 19, 2026",
