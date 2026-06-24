@@ -4,6 +4,12 @@ import "../LocalNavigation.css";
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
     {
+    title: "Sample Question Papers for Admission Test 2026-2027",
+    pdfPath: "./Images/Notices/sample-question-notice-2026-2027.pdf",
+    date: "June 24, 2026",
+    isNew: true
+    },
+    {
     title: "Re-allocation of Branches for Admitted B.Tech Students – JEE Category, 2026–27",
     pdfPath: "./Images/Notices/Re-Allot.Notice_BTECH_JEE_22-6-2026.pdf",
     date: "June 22, 2026",
