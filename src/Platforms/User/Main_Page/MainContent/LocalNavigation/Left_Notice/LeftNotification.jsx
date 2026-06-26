@@ -4,6 +4,25 @@ import "../LocalNavigation.css";
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
     {
+    title: "List of Eligible and Ineligible Candidates for MIT Admission Test 2026",
+    pdfPath: "./Images/Notices/Eligible&InEligibleNOTICE_Admission_Test.pdf",
+    date: "June 26, 2026",
+    isNew: true
+    },
+    {
+    title: "B.Tech. 2nd Semester Examination Result – 2026",
+    pdfPath: "./Images/Notices/BTech_2nd_Sem_results.pdf",
+    date: "June 26, 2026",
+    isNew: true
+    },
+
+    {
+    title: "Result of B.E 7th(Supplementary) Semester Examination – 2026",
+    pdfPath: "./Images/Notices/7th_sem_supple_results.pdf",
+    date: "June 26, 2026",
+    isNew: true
+    },
+    {
     title: "Sample Question Papers for Admission Test 2026-2027",
     pdfPath: "./Images/Notices/sample-question-notice-2026-2027.pdf",
     date: "June 24, 2026",
@@ -13,25 +32,25 @@ const noticesData = [
     title: "Re-allocation of Branches for Admitted B.Tech Students – JEE Category, 2026–27",
     pdfPath: "./Images/Notices/Re-Allot.Notice_BTECH_JEE_22-6-2026.pdf",
     date: "June 22, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "M.Tech Admission 2026–27: Provisional Selection of GATE Qualified Candidates",
     pdfPath: "./Images/Notices/MTECH_GATE_NOTICE_19_06_2026.pdf",
     date: "June 19, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "B.Tech Admission 2026–27: Ineligible Candidates and JEE Below Cut-off List",
     pdfPath: "./Images/Notices/In-eligible & Below Cut-off mark_JEE_notice.pdf",
     date: "June 19, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "Revised Admission Schedule for B.Tech and M.Tech Programmes (Academic Session 2026–2027)",
     pdfPath: "./Images/Notices/MIT-extended-notice-2026-27.pdf",
     date: "June 19, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "Entrance Syllabus (2026–27): B.Tech (Non-JEE), Lateral Entry & M.Tech",
