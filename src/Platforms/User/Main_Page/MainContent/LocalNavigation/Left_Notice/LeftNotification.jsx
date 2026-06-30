@@ -4,6 +4,12 @@ import "../LocalNavigation.css";
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
     {
+    title: "Combined Merit List of the Admission Test Held on 30 June 2026",
+    pdfPath: "./Images/Notices/Notice_ADMISSION_TEST_30-6-2026.pdf",
+    date: "June 30, 2026",
+    isNew: true
+    },
+    {
     title: "Result of B.E 8th Semester Examination – 2026",
     pdfPath: "./Images/Notices/8th-Sem-result-2026.pdf",
     date: "June 30, 2026",
