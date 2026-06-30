@@ -4,6 +4,12 @@ import "../LocalNavigation.css";
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
     {
+    title: "Result of B.E 8th Semester Examination – 2026",
+    pdfPath: "./Images/Notices/8th-Sem-result-2026.pdf",
+    date: "June 30, 2026",
+    isNew: true
+    },
+    {
     title: "List of Eligible and Ineligible Candidates for MIT Admission Test 2026",
     pdfPath: "./Images/Notices/Eligible&InEligibleNOTICE_Admission_Test.pdf",
     date: "June 26, 2026",
