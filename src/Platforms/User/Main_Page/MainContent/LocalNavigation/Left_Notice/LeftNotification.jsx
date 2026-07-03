@@ -4,6 +4,18 @@ import "../LocalNavigation.css";
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
     {
+    title: "Commencement of Regular Classes for B.Tech/B.E. & M.Tech. Programmes (July 2026)",
+    pdfPath: "./Images/Notices/class-start-2026.pdf",
+    date: "July 3, 2026",
+    isNew: true
+    },
+    {
+    title: "Result of B.E 2nd Semester Examination, 2026(June)",
+    pdfPath: "./Images/Notices/BE-2nd-sem-results2026.pdf",
+    date: "July 3, 2026",
+    isNew: true
+    },
+    {
     title: "Notice on Determination of Merit for Candidates Securing Equal Marks",
     pdfPath: "./Images/Notices/Notice_BTech_Non-JEE (ranking)_30-6-2026.pdf",
     date: "July 1, 2026",
