@@ -4,6 +4,12 @@ import "../LocalNavigation.css";
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
     {
+    title: "Provisional Selection List for B.Tech (Non-JEE) & M.Tech Admissions 2026–2027",
+    pdfPath: "./Images/Notices/Admission Notice_BTECH_MTECH_03-07-2026.pdf",
+    date: "July 3, 2026",
+    isNew: true
+    },
+    {
     title: "Commencement of Regular Classes for B.Tech/B.E. & M.Tech. Programmes (July 2026)",
     pdfPath: "./Images/Notices/class-start-2026.pdf",
     date: "July 3, 2026",
@@ -287,54 +293,6 @@ const noticesData = [
     date: "July 17, 2025",
     isNew: false
   },
-  {
-    title: "Admission Notice – Provisionally Selected First-Year B.E. Students (Non-JEE)",
-    pdfPath: "./Images/Notices/admission notice_BE_WL_8-7-25.pdf",
-    date: "July 8, 2025",
-    isNew: false
-  },
-  {
-    title: "Reallocation Notice – B.E. First Semester (Non-JEE Category), MIT Imphal",
-    pdfPath: "/Images/Notices/Reallocation notice_NON_JEE_8-7-25.pdf",
-    date: "July 8, 2025",
-    isNew: false
-  },
-  {
-    title: "Admission Notice (Non-JEE) – Candidate List for B.E.",
-    pdfPath: "./Images/Notices/Admission Notice_BE_Non-JEE Category_30-6-2025.pdf",
-    date: "June 30, 2025",
-    isNew: false
-  },
-  {
-    title: "Branch Reallocation Notice for JEE Category Candidates - B.E. Session 2025-2026",
-    pdfPath: "./Images/Notices/Notice_Reallotment_JEE_annexure_24-6-25.pdf",
-    date: "June 24, 2025",
-    isNew: false
-  },
-  {
-    title: "EXTENDED ADMISSION NOTICE",
-    pdfPath: "./Images/Notices/notice extended_11-6-25.pdf",
-    date: "June 11, 2025",
-    isNew: false
-  },
-  {
-    title: "Press Release Notice for Admission Schedule Postponed for B.E. & M.Tech. Programmes (2025-2026)",
-    pdfPath: "./Images/Notices/press release_9-6-25.pdf",
-    date: "June 9, 2025",
-    isNew: false
-  },
-  {
-    title: "BE recommended candidates(JEE Qualified)",
-    pdfPath: "./Images/Notices/admission notice with annexure-I_BE_JEE_6-6-25.pdf",
-    date: "June 6, 2025",
-    isNew: false
-  },
-  {
-    title: "Extended admission notice for 2025-26",
-    pdfPath: "./Images/Notices/notice extended_4-6-25.pdf",
-    date: "June 4, 2025",
-    isNew: false
-  }
 ];
 
 // Notice Item Component
