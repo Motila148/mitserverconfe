@@ -4,6 +4,12 @@ import "../LocalNavigation.css";
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
     {
+    title: "Admission Notice for Provisionally Selected Candidates – B.Tech (Lateral) 2026–2027",
+    pdfPath: "./Images/Notices/Admission Notice_BTECH(Lateral)_07-07-2026.pdf",
+    date: "July 7, 2026",
+    isNew: true
+    },
+    {
     title: "Provisional Selection List for B.Tech (Non-JEE) & M.Tech Admissions 2026–2027",
     pdfPath: "./Images/Notices/Admission Notice_BTECH_MTECH_03-07-2026.pdf",
     date: "July 3, 2026",
@@ -31,13 +37,13 @@ const noticesData = [
     title: "Combined Merit List of the Admission Test Held on 30 June 2026",
     pdfPath: "./Images/Notices/Notice_ADMISSION_TEST_30-6-2026.pdf",
     date: "June 30, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "Result of B.E 8th Semester Examination – 2026",
     pdfPath: "./Images/Notices/8th-Sem-result-2026.pdf",
     date: "June 30, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "List of Eligible and Ineligible Candidates for MIT Admission Test 2026",
