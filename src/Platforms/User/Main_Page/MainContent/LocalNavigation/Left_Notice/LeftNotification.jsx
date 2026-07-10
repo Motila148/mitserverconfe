@@ -4,6 +4,18 @@ import "../LocalNavigation.css";
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
     {
+    title: "Notice: B.TECH Branch Change Allotment",
+    pdfPath: "./Images/Notices/order-trade-change_10-7-26.pdf",
+    date: "July 10, 2026",
+    isNew: true
+    },
+    {
+    title: "Result of M.Tech 4th Semester Examination 2026.",
+    pdfPath: "./Images/Notices/MTech4thSem-results.pdf",
+    date: "July 10, 2026",
+    isNew: true
+    },
+    {
     title: "Admission Notice for Provisionally Selected Candidates – B.Tech (Lateral) 2026–2027",
     pdfPath: "./Images/Notices/Admission Notice_BTECH(Lateral)_07-07-2026.pdf",
     date: "July 7, 2026",
@@ -25,13 +37,13 @@ const noticesData = [
     title: "Result of B.E 2nd Semester Examination, 2026(June)",
     pdfPath: "./Images/Notices/BE-2nd-sem-results2026.pdf",
     date: "July 3, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "Notice on Determination of Merit for Candidates Securing Equal Marks",
     pdfPath: "./Images/Notices/Notice_BTech_Non-JEE (ranking)_30-6-2026.pdf",
     date: "July 1, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "Combined Merit List of the Admission Test Held on 30 June 2026",
