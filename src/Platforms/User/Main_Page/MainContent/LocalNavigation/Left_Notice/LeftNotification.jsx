@@ -4,6 +4,18 @@ import "../LocalNavigation.css";
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
     {
+    title: "Result of B.E 4th Semester Exam(June 2026)",
+    pdfPath: "./Images/Notices/4th-Sem-results2026.pdf",
+    date: "July 14, 2026",
+    isNew: true
+    },
+    {
+    title: "Result of M.Tech 2nd Semester Exam(June 2026)",
+    pdfPath: "./Images/Notices/MTech-2nd-Sem-results2026.pdf",
+    date: "July 14, 2026",
+    isNew: true
+    },
+    {
     title: "Notice: B.TECH Branch Change Allotment",
     pdfPath: "./Images/Notices/order-trade-change_10-7-26.pdf",
     date: "July 10, 2026",
