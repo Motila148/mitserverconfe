@@ -3,6 +3,18 @@ import "../LocalNavigation.css";
 
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
+   {
+    title: "Notice for Filling Vacant Seats in B.Tech and M.Tech Programmes",
+    pdfPath: "./Images/Notices/Notice_Spot BE_MTECH 17-7-26.pdf",
+    date: "July 17, 2026",
+    isNew: true
+    },
+    {
+    title: "B.Tech (Non-JEE) Branch Reallocation and Waitlist Admission Notice",
+    pdfPath: "./Images/Notices/Re-Allot._waitList_Notice_BTECH_Non-JEE_with annexure_17-7-2026.pdf",
+    date: "July 17, 2026",
+    isNew: true
+    },
     {
     title: "Result of B.E 4th Semester Exam(June 2026)",
     pdfPath: "./Images/Notices/4th-Sem-results2026.pdf",
@@ -37,13 +49,13 @@ const noticesData = [
     title: "Provisional Selection List for B.Tech (Non-JEE) & M.Tech Admissions 2026–2027",
     pdfPath: "./Images/Notices/Admission Notice_BTECH_MTECH_03-07-2026.pdf",
     date: "July 3, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "Commencement of Regular Classes for B.Tech/B.E. & M.Tech. Programmes (July 2026)",
     pdfPath: "./Images/Notices/class-start-2026.pdf",
     date: "July 3, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "Result of B.E 2nd Semester Examination, 2026(June)",
