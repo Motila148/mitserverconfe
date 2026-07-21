@@ -3,6 +3,24 @@ import "../LocalNavigation.css";
 
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
+    {
+    title: "Student Induction Programme (SIP) for B.Tech. 1st Semester (2026-27)",
+    pdfPath: "./Images/Notices/student-induction2026.pdf",
+    date: "July 21, 2026",
+    isNew: true
+    },
+    {
+    title: "M.Tech 1st Semester (2026-27): Regular Classes to Begin on 27th July 2026",
+    pdfPath: "./Images/Notices/mtech-class-start.pdf",
+    date: "July 21, 2026",
+    isNew: true
+    },
+    {
+    title: "Result of B.E 6th Semester Exam(June 2026)",
+    pdfPath: "./Images/Notices/6th-Sem-results-2026.pdf",
+    date: "July 21, 2026",
+    isNew: true
+    },
    {
     title: "Notice for Filling Vacant Seats in B.Tech and M.Tech Programmes",
     pdfPath: "./Images/Notices/Notice_Spot BE_MTECH 17-7-26.pdf",
@@ -19,31 +37,31 @@ const noticesData = [
     title: "Result of B.E 4th Semester Exam(June 2026)",
     pdfPath: "./Images/Notices/4th-Sem-results2026.pdf",
     date: "July 14, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "Result of M.Tech 2nd Semester Exam(June 2026)",
     pdfPath: "./Images/Notices/MTech-2nd-Sem-results2026.pdf",
     date: "July 14, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "Notice: B.TECH Branch Change Allotment",
     pdfPath: "./Images/Notices/order-trade-change_10-7-26.pdf",
     date: "July 10, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "Result of M.Tech 4th Semester Examination 2026.",
     pdfPath: "./Images/Notices/MTech4thSem-results.pdf",
     date: "July 10, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "Admission Notice for Provisionally Selected Candidates – B.Tech (Lateral) 2026–2027",
     pdfPath: "./Images/Notices/Admission Notice_BTECH(Lateral)_07-07-2026.pdf",
     date: "July 7, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "Provisional Selection List for B.Tech (Non-JEE) & M.Tech Admissions 2026–2027",
