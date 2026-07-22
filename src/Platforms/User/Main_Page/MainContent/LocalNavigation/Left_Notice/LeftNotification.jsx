@@ -4,6 +4,12 @@ import "../LocalNavigation.css";
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
     {
+    title: "Provisional Admission List for M.Tech & B.Tech (Lateral) 2026",
+    pdfPath: "./Images/Notices/order_recommend_M.Tech.&Lateral_22.7.26.pdf",
+    date: "July 22, 2026",
+    isNew: true
+    },
+    {
     title: "Student Induction Programme (SIP) for B.Tech. 1st Semester (2026-27)",
     pdfPath: "./Images/Notices/student-induction2026.pdf",
     date: "July 21, 2026",
