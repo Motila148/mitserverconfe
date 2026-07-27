@@ -5,7 +5,7 @@ import "../LocalNavigation.css";
 const noticesData = [
     {
     title: "Provisionally Recommended Candidates for Spot Admission (2026-27)",
-    pdfPath: "./Images/Notices/order_recommend_M.Tech.&Lateral_22.7.26.pdf",
+    pdfPath: "./Images/Notices/spot-admission-notice_27.7.26.pdf",
     date: "July 27, 2026",
     isNew: true
     },
