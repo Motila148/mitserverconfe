@@ -4,6 +4,12 @@ import "../LocalNavigation.css";
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
     {
+    title: "Provisional Room Allotment & Fee Payment for MIT Girl's Hostel",
+    pdfPath: "./Images/Notices/girl-hostel-allocation-2026.pdf",
+    date: "August 4, 2026",
+    isNew: true
+    },
+    {
     title: "Provisional Room Allotment & Fee Payment for MIT Boy's Hostel",
     pdfPath: "./Images/Notices/hostel-allocation2026.pdf",
     date: "July 31, 2026",
