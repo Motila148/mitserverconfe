@@ -20,10 +20,10 @@ function ViceChancellor() {
             </div>
             <div className="hero-text-container">
               <h1 className="hero-title">
-                Prof. Naorem Lokendra Singh
+                Prof. R K Hemakumar Singh
               </h1>
               <p className="hero-designation">
-                Vice-Chancellor, Manipur University
+                Vice-Chancellor(i/c), Manipur University
               </p>
               <p className="hero-designation hero-designation--secondary">
                 Chairman, Governing Body of MIT

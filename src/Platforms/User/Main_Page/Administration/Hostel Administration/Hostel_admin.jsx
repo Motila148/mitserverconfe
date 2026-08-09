@@ -44,7 +44,7 @@ function Hostel_admin() {
                   <div className="warden-card__icon-bg boys-hostel">
                     <BoysHostelIcon />
                   </div>
-                  <h3 className="warden-card__name">Dr. S. Jitu Singh</h3>
+                  <h3 className="warden-card__name">Dr. Takhellambam Sonamani Singh</h3>
                   <p className="warden-card__department">Associate Professor <br />Department of Computer Science and Engineering</p>
 
                   <p className="warden-card__role">Warden, Boys' Hostel</p>
@@ -55,8 +55,8 @@ function Hostel_admin() {
                   <div className="warden-card__icon-bg girls-hostel">
                     <GirlsHostelIcon />
                   </div>
-                  <h3 className="warden-card__name">Dr. N. Ashalata Devi</h3>
-                  <p className="warden-card__department">Asst. Prof. of Basic Sciences & Humanities</p>
+                  <h3 className="warden-card__name">A. Balarampyari Devi</h3>
+                  <p className="warden-card__department">Assistant Professor<br/>Department of Electronics & Communication Engineering</p>
                   <p className="warden-card__role">Warden, Girls' Hostel</p>
                 </div>
 
