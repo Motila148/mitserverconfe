@@ -4,6 +4,7 @@ import { LeftDownload } from "../../MainContent/LocalNavigation/Left_Download/Le
 import { LeftInformation } from "../../MainContent/LocalNavigation/Left_Information/LeftInformation";
 import { LeftNotification } from "../../MainContent/LocalNavigation/Left_Notice/LeftNotification";
 import "../Facility.css";
+
 function HF() {
   return (
     <div className="Facility_container">
@@ -11,51 +12,67 @@ function HF() {
 
       <div className="Facility_align">
         <div className="Facility_Tittle">
-          <h1 className="">Facility</h1>
+          <h1>Facility</h1>
         </div>
+
         <div className="Facility_wrapper">
           <div className="Facility_Header_container">
-            <h2 className="Facility_Header">Hostel Facility : </h2>
+            <h2 className="Facility_Header">Hostel Facility :</h2>
           </div>
+
           <div className="Facility_body">
             <div className="Facility_main">
               <div className="text_box facility_text_box">
-                <h2>Information about Hostel Facility </h2>
+                <h2>Information about Hostel Facility</h2>
+
                 <p className="facility_text">
                   The Institute has one Boys’ Hostel having capacity of 100
                   students and one Girls' Hostel at M.U. Campus, Canchipur
                   having capacity of 100 students and are managed by two
                   wardens.
                 </p>
-                <div>
-                  <table >
+
+                <div className="warden-table-container">
+                  <table className="warden-table">
                     <tbody>
                       <tr>
                         <td>
-                          <p>
-                            i) <strong>Dr.&nbsp;S Jitu&nbsp;Singh</strong>
-                            <br /> Asst.Professor, CSE Dept&nbsp;
-                          </p>
+                          <div className="warden-details">
+                            <strong>
+                              i) Dr. Takhellambam Sonamani Singh
+                            </strong>
+                            <span>
+                              Associate Prof., Department of Computer Science and Engineering
+                            </span>
+                          </div>
                         </td>
-                        <td>Warden Boys' Hostel&nbsp;&nbsp;</td>
+                        <td>Warden, Boys' Hostel</td>
                       </tr>
+
                       <tr>
                         <td>
-                          <p>
-                            i) <strong>Dr.&nbsp;N. Ashalata Devi</strong>
-                            <br /> Asst.Professor, Basic Sciences &amp;
-                            Humanities Dept&nbsp;
-                          </p>
+                          <div className="warden-details">
+                            <strong>
+                              ii) A. Balarampyari Devi
+                            </strong>
+                            <span>
+                              Assistant Prof., Department of Electronics & Communication Engineering
+                            </span>
+                          </div>
                         </td>
-                        <td>&nbsp;Warden Girls' Hostel</td>
+                        <td>Warden, Girls' Hostel</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
+
                 <h3>HOSTEL FEE</h3>
-                <p>As per the Hostel Fee Structure of Manipur University.</p>
+                <p>
+                  As per the Hostel Fee Structure of Manipur University.
+                </p>
               </div>
             </div>
+
             <div className="Facility_right">
               <LeftNotification />
               <LeftInformation />
@@ -64,6 +81,7 @@ function HF() {
           </div>
         </div>
       </div>
+
       <Footer />
     </div>
   );
