@@ -4,6 +4,12 @@ import "../LocalNavigation.css";
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
     {
+    title: "Extension of Admission Date up to 31st August 2026 (B.Tech, B.E. & M.Tech)",
+    pdfPath: "./Images/Notices/extension-notice-odd-sem2026.pdf",
+    date: "August 14, 2026",
+    isNew: true
+    },
+    {
     title: "Provisional Room Allotment & Fee Payment for MIT Girl's Hostel",
     pdfPath: "./Images/Notices/girl-hostel-allocation-2026.pdf",
     date: "August 4, 2026",
@@ -19,43 +25,43 @@ const noticesData = [
     title: "Provisionally Recommended Candidates for Spot Admission (2026-27)",
     pdfPath: "./Images/Notices/spot-admission-notice_27.7.26.pdf",
     date: "July 27, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "Provisional Admission List for M.Tech & B.Tech (Lateral) 2026",
     pdfPath: "./Images/Notices/order_recommend_M.Tech.&Lateral_22.7.26.pdf",
     date: "July 22, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "Student Induction Programme (SIP) for B.Tech. 1st Semester (2026-27)",
     pdfPath: "./Images/Notices/student-induction2026.pdf",
     date: "July 21, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "M.Tech 1st Semester (2026-27): Regular Classes to Begin on 27th July 2026",
     pdfPath: "./Images/Notices/mtech-class-start.pdf",
     date: "July 21, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "Result of B.E 6th Semester Exam(June 2026)",
     pdfPath: "./Images/Notices/6th-Sem-results-2026.pdf",
     date: "July 21, 2026",
-    isNew: true
+    isNew: false
     },
    {
     title: "Notice for Filling Vacant Seats in B.Tech and M.Tech Programmes",
     pdfPath: "./Images/Notices/Notice_Spot BE_MTECH 17-7-26.pdf",
     date: "July 17, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "B.Tech (Non-JEE) Branch Reallocation and Waitlist Admission Notice",
     pdfPath: "./Images/Notices/Re-Allot._waitList_Notice_BTECH_Non-JEE_with annexure_17-7-2026.pdf",
     date: "July 17, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "Result of B.E 4th Semester Exam(June 2026)",
