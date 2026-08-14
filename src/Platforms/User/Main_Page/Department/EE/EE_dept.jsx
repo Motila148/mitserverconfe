@@ -111,24 +111,6 @@ function EE_dept() {
                       </div>
                     </div>
                   </div>
-                  <div className="Box_1">
-                    <div className="Box_1_align">
-                      <div className="member_img_container">
-                        <img
-                          className="member_img"
-                          src="./Images/Department/EE/Members/Ee_faculty.jpeg"
-                          alt=""
-                        />
-                      </div>
-                      <div className="member_info_box">
-                        <h3>Dr. Kshetrimayum Priyalakshmi Devi</h3>
-                        <h4>Guest Faculty</h4>
-                        <a href="/">priyakshetrimayum@gmail.com</a>
-                        <p>Ph.D.</p>
-                        <p>Renewable energy, Fabrication of plasmonic device.</p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
