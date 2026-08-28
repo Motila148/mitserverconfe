@@ -4,6 +4,12 @@ import "../LocalNavigation.css";
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
     {
+    title: "Programme for 1st Internal Assessment Test 2026",
+    pdfPath: "./Images/Notices/1st-internal-assessment-prog2026.pdf",
+    date: "August 28, 2026",
+    isNew: true
+    },
+    {
     title: "Extension of Admission Date up to 31st August 2026 (B.Tech, B.E. & M.Tech)",
     pdfPath: "./Images/Notices/extension-notice-odd-sem2026.pdf",
     date: "August 14, 2026",
