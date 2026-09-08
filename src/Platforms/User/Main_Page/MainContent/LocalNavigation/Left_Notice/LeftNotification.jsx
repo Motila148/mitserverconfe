@@ -4,6 +4,12 @@ import "../LocalNavigation.css";
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
     {
+    title: "MIT Pre-Ph.D. Admission 2026-27: Provisionally Eligible Candidates for QET (Phase-I)",
+    pdfPath: "./Images/Notices/Pre-Ph.D_notice-eligible-8-9-26.pdf",
+    date: "September 8, 2026",
+    isNew: true
+    },
+    {
     title: "Programme for 1st Internal Assessment Test 2026",
     pdfPath: "./Images/Notices/1st-internal-assessment-prog2026.pdf",
     date: "August 28, 2026",
