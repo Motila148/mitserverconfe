@@ -4,6 +4,12 @@ import "../LocalNavigation.css";
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
     {
+    title: "List of Candidates Exempted from QET for Pre-Ph.D. Admission in Engineering (2026–27 Phase I)",
+    pdfPath: "./Images/Notices/pre-phd-Corrigendum-2026.pdf",
+    date: "September 17, 2026",
+    isNew: true
+    },
+    {
     title: "MIT Pre-Ph.D. Admission 2026-27: Provisionally Eligible Candidates for QET (Phase-I)",
     pdfPath: "./Images/Notices/Pre-Ph.D_notice-eligible-8-9-26.pdf",
     date: "September 8, 2026",
