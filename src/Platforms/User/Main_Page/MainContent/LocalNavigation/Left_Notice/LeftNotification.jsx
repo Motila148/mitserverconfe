@@ -4,6 +4,12 @@ import "../LocalNavigation.css";
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
     {
+    title: "Notice for Presentation and Personal Interview (Pre-Ph.D. Admission 2026-27)",
+    pdfPath: "./Images/Notices/NOTICE-PHD 2026-27-18THSEPT2026.pdf",
+    date: "September 18, 2026",
+    isNew: true
+    },
+    {
     title: "List of Candidates Exempted from QET for Pre-Ph.D. Admission in Engineering (2026–27 Phase I)",
     pdfPath: "./Images/Notices/pre-phd-Corrigendum-2026.pdf",
     date: "September 17, 2026",
