@@ -22,7 +22,7 @@ function Home() {
         <div className="HomePage_wrapper">
           <Image_slider />
           
-          <ConferenceMarquee 
+          {/*<ConferenceMarquee 
               message={
                   <>
                       Admissions are open for B.Tech/M.Tech 2026-2027.
@@ -30,7 +30,7 @@ function Home() {
               } 
               link="https://manipurunivadm.samarth.edu.in/2026/" 
               linkText="Apply Now" 
-          />
+          />*/}
 
           <div className="HomePage_top_link">
             <a

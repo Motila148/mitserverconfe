@@ -4,6 +4,12 @@ import "../LocalNavigation.css";
 // Notice data array - Add new notices at the TOP of this array
 const noticesData = [
     {
+    title: "Pre-Ph.D. Admission Results (Phase-I) – 2026-27",
+    pdfPath: "./Images/Notices/MIT_PhD_result2026-27.pdf",
+    date: "October 05, 2026",
+    isNew: true
+    },
+    {
     title: "Notice for Presentation and Personal Interview (Pre-Ph.D. Admission 2026-27)",
     pdfPath: "./Images/Notices/NOTICE-PHD 2026-27-18THSEPT2026.pdf",
     date: "September 18, 2026",
@@ -13,37 +19,37 @@ const noticesData = [
     title: "List of Candidates Exempted from QET for Pre-Ph.D. Admission in Engineering (2026–27 Phase I)",
     pdfPath: "./Images/Notices/pre-phd-Corrigendum-2026.pdf",
     date: "September 17, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "MIT Pre-Ph.D. Admission 2026-27: Provisionally Eligible Candidates for QET (Phase-I)",
     pdfPath: "./Images/Notices/Pre-Ph.D_notice-eligible-8-9-26.pdf",
     date: "September 8, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "Programme for 1st Internal Assessment Test 2026",
     pdfPath: "./Images/Notices/1st-internal-assessment-prog2026.pdf",
     date: "August 28, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "Extension of Admission Date up to 31st August 2026 (B.Tech, B.E. & M.Tech)",
     pdfPath: "./Images/Notices/extension-notice-odd-sem2026.pdf",
     date: "August 14, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "Provisional Room Allotment & Fee Payment for MIT Girl's Hostel",
     pdfPath: "./Images/Notices/girl-hostel-allocation-2026.pdf",
     date: "August 4, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "Provisional Room Allotment & Fee Payment for MIT Boy's Hostel",
     pdfPath: "./Images/Notices/hostel-allocation2026.pdf",
     date: "July 31, 2026",
-    isNew: true
+    isNew: false
     },
     {
     title: "Provisionally Recommended Candidates for Spot Admission (2026-27)",
